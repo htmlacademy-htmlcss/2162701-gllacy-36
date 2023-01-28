@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Zinochek](https://up.htmlacademy.ru/htmlcss/36/user/2162701).
-* Наставник: `Владимир Вавщик`.
+* Наставник: [Владимир Вавщик](https://htmlacademy.ru/profile/id1610171).
 
 ---
 
