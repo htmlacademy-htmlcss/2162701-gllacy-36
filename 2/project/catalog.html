@@ -12,7 +12,7 @@
         <a class="navigation-logo" href="index.html">
           <img class="header-logo" src="#" alt="Логотип Глейси">
         </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="основная">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">
@@ -74,7 +74,7 @@
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">по популярности</option>
               <option value="cheap">по возрастанию цены</option>
-              <option value="expenive">по убыванию цены</option>
+              <option value="expensive">по убыванию цены</option>
             </select>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -111,31 +111,31 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="chocolate" checked>
+                  <input class="control-input" type="checkbox" name="chocolate" value="yes" checked>
                   <span class="filter">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="sugar-sprinkle" checked>
+                  <input class="control-input" type="checkbox" name="sugar-sprinkle" value="yes" checked>
                   <span class="filter">сахарные посыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="fruit">
+                  <input class="control-input" type="checkbox" name="fruit" value="yes">
                   <span class="filter">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="syrup">
+                  <input class="control-input" type="checkbox" name="syrup" value="yes">
                   <span class="filter">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="jam">
+                  <input class="control-input" type="checkbox" name="jam" value="yes">
                   <span class="filter">джемы</span>
                 </label>
               </li>
@@ -153,8 +153,8 @@
               Сливочное мороженое с малиновым джемом
             </p>
             <span class="ice-cream-price">310 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg></button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="фисташковое морожное">
@@ -165,8 +165,8 @@
               Фисташковый пломбир с кусочками шоколада
             </p>
             <span class="ice-cream-price">340 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg></button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="черничное морожное">
@@ -177,8 +177,8 @@
               Крем-брюле с черничным джемом
             </p>
             <span class="ice-cream-price">330 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg></button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="бабл-гам морожное">
@@ -189,8 +189,9 @@
               Ванильный пломбир со сладкой посыпкой
             </p>
             <span class="ice-cream-price">320 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="ежевичное морожное">
@@ -201,8 +202,9 @@
               Сливочное мороженое с ежевичным джемом
             </p>
             <span class="ice-cream-price">330 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="банановое морожное">
@@ -213,8 +215,8 @@
               Сливочный пломбир с банановым вкусом
             </p>
             <span class="ice-cream-price">340 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg></button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="шоколадное морожное">
@@ -225,8 +227,9 @@
               Классический шоколадный пломбир
             </p>
             <span class="ice-cream-price">270 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="клубничное морожное">
@@ -237,8 +240,9 @@
               Сливочный пломбир с клубничным вкусом
             </p>
             <span class="ice-cream-price">300 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="лимонное морожное">
@@ -249,8 +253,9 @@
               Освежающий лимонный сорбет
             </p>
             <span class="ice-cream-price">310 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="мятное морожное">
@@ -261,8 +266,9 @@
               Сливочный пломбир с ментоловым сиропом
             </p>
             <span class="ice-cream-price">320 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="ореховое морожное">
@@ -273,8 +279,9 @@
               Фисташковый пломбир с шоколадным сиропом
             </p>
             <span class="ice-cream-price">360 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="#" alt="Крем-брюле морожное">
@@ -285,8 +292,9 @@
               Классическое крем-брюле
             </p>
             <span class="ice-cream-price">280 ₽/кг</span>
-            <button class="navigation-user-button" type="button" aria-label="корзина"></button>
-            <svg class="ice-cream-svg"></svg>
+            <button class="navigation-user-button" type="button" aria-label="добавить в корзину">
+              <svg class="ice-cream-svg"></svg>
+            </button>
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Показать ещё</button>
@@ -338,7 +346,7 @@
             </a>
           </li>
         </ul>
-        <nav class="navigation-page-footer">
+        <nav class="navigation-page-footer" aria-label="второстепенная">
           <ul class="navigation-page-link">
             <li class="navigation-page-item">
               <a class="navigation-page-link" href="#">
