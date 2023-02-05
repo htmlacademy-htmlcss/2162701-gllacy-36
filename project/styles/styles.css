@@ -1,5 +1,92 @@
+@font-face {
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-family: inter;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 body {
+  font-family: "Inter", sans-serif;
   background-color: #FEAFC3;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 22px;
+  }
+.main-header {
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.navigation-link{
+  color: #2D3440;
+  text-decoration: none;
+}
+.contacts-phone {
+  color: #2D3440;
+  font-weight: 700;
+  text-decoration: none;
+}
+.ice-cream {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.present-item-1{
+  background: #FF7799 url("../images/present/present-1.png") no-repeat bottom right;
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
+  background-size: 219px 268px;
+}
+.present-item-2{
+background: #FF7799 url("../images/present/present-2.png") no-repeat bottom right;
+width: 570px;
+height: 268px;
+border-radius: 16px;
+background-size: 219px 268px;
+}
+.shop-ice-cream {
+  background-image: url("../images/background/background-shop-ice-cream.png");
+  width: 1170px;
+  height: 480px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
 }
 .news-and-subscription-one {
   background-image: url("../images/background/background-news.jpg");
@@ -8,10 +95,10 @@ body {
   border-radius: 16px;
 }
 .news-and-subscription-two {
-  background-color: #FFFFFF;
+  background-image: url("../images/background/background-subscription.png");
   border-radius: 16px;
-  width: 558px;
-  height: 212px;
+  width: 570px;
+  height: 224px;
 }
 .delivery {
   background-image: url("../images/background/background-delivery.jpg");
@@ -26,3 +113,7 @@ body {
   border-radius: 16px;
   background-repeat: no-repeat;
  }
+ .navigation-page-link{
+  color: #2D3440;
+  text-decoration: none;
+}
