@@ -1,5 +1,28 @@
-
+body {
+  background-color: #FEAFC3;
+}
+.news-and-subscription-one {
+  background-image: url("../images/background/background-news.jpg");
+  width: 570px;
+  height: 224px;
+  border-radius: 16px;
+}
+.news-and-subscription-two {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  width: 558px;
+  height: 212px;
+}
+.delivery {
+  background-image: url("../images/background/background-delivery.jpg");
+  width: 1170px;
+  height: 534px;
+  border-radius: 16px;
+}
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
+  width: 1170px;
+  height: 534px;
   border-radius: 16px;
+  background-repeat: no-repeat;
  }
