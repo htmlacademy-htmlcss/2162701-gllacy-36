@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/inter-700.woff2") format("woff2");
   font-family: inter;
@@ -12,6 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-family: inter;
@@ -19,6 +21,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/inter-400.woff2") format("woff2");
   font-family: inter;
@@ -26,6 +29,7 @@
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/inter-700.woff2") format("woff2");
   font-family: inter;
@@ -33,6 +37,7 @@
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-family: inter;
@@ -40,47 +45,126 @@
   font-style: italic;
   font-display: swap;
 }
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #FEAFC3;
   color: #2D3440;
   font-size: 16px;
   line-height: 22px;
-  }
-.main-header {
-    line-height: 20px;
-    font-weight: 400;
-    text-align: center;
 }
-.navigation-link{
+
+.main-header {
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.navigation-link {
   color: #2D3440;
   text-decoration: none;
 }
+
 .contacts-phone {
   color: #2D3440;
   font-weight: 700;
   text-decoration: none;
 }
-.ice-cream {
+
+.banner-ice-cream {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  text-align: center;
 }
 
-.present-item-1{
+.button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  background: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
+.button-order {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+  background: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
+.present-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.present-description {
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.present-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.present-item-1 {
   background: #FF7799 url("../images/present/present-1.png") no-repeat bottom right;
+  color: #2D3440;
   width: 570px;
   height: 268px;
   border-radius: 16px;
   background-size: 219px 268px;
 }
-.present-item-2{
-background: #FF7799 url("../images/present/present-2.png") no-repeat bottom right;
-width: 570px;
-height: 268px;
-border-radius: 16px;
-background-size: 219px 268px;
+
+.present-item-2 {
+  background: #FF7799 url("../images/present/present-2.png") no-repeat bottom right;
+  color: #2D3440;
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
+  background-size: 219px 268px;
 }
+
+.ice-cream-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.ice-cream-description {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.ice-cream-price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.shop-description {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .shop-ice-cream {
   background-image: url("../images/background/background-shop-ice-cream.png");
   width: 1170px;
@@ -88,32 +172,175 @@ background-size: 219px 268px;
   border-radius: 16px;
   background-repeat: no-repeat;
 }
+
+.news-and-subscription {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.news-description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.subscription-description {
+  line-height: 22px;
+}
+
+.subscription-form {
+  color: #B9B9B9;
+}
+
 .news-and-subscription-one {
   background-image: url("../images/background/background-news.jpg");
   width: 570px;
   height: 224px;
   border-radius: 16px;
 }
+
 .news-and-subscription-two {
   background-image: url("../images/background/background-subscription.png");
   border-radius: 16px;
   width: 570px;
   height: 224px;
 }
+
 .delivery {
   background-image: url("../images/background/background-delivery.jpg");
   width: 1170px;
   height: 534px;
   border-radius: 16px;
+  line-height: 22px;
+  color: #565C66;
 }
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-form {
+  color: #B9B9B9;
+  line-height: 20px;
+}
+
+.label-text {
+  color: #2D3440;
+}
+
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
   width: 1170px;
   height: 534px;
   border-radius: 16px;
   background-repeat: no-repeat;
- }
- .navigation-page-link{
+}
+
+.contacts-text {
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-address {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contacts-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.contacts-telephone-text {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation-page-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.navigation-page-link-for {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px
+}
+
+.htmlacademy-link {
+  color: #2D3440;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  border-bottom: 1px solid #2D3440;
+}
+
+.breadcrumbs {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.breadcrumbs-creamy{
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+text-decoration: none;
+color: #2D3440;
+border-bottom: 1px solid #2D3440;
+}
+
+.inner-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.catalog-filter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-filter {
+  font-weight: 700;
+  text-align: center;
+  color: #2D3440;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 20px;
+}
+
+.button-pagination-show-more {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: ;
+  background: #FCFCFC;
+  border:  4px solid rgba(252, 252, 252, 0.4);;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
