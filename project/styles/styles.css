@@ -70,7 +70,7 @@ body {
   text-decoration: none;
 }
 
-.title-banner {
+.title-slider {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -86,8 +86,9 @@ body {
   text-align: center;
 }
 
-.banner-ice-cream {
+.slider-ice-cream {
   font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
 }
 
@@ -120,49 +121,63 @@ body {
   line-height: 30px;
 }
 
-
-
 .present-item {
-  background: #FF7799;
   color: #2D3440;
   width: 570px;
   height: 268px;
   border-radius: 16px;
   background-size: 219px 268px;
   font-weight: 400;
-  line-height: 22px;
+  list-style: none;
 }
 
 .present-item-raspberries {
   background: #FF7799 url("../images/present/present-raspberries.png") no-repeat bottom right;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 36px 200px 36px 36px;
+gap: 28px;
+isolation: isolate;
 }
 
 .present-item-marshmallow {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 36px 200px 36px 36px;
+gap: 28px;
+isolation: isolate;
 }
 
 .ice-cream-title {
   font-weight: 700;
   font-size: 20px;
+  line-height: 24px;
   text-align: center;
 }
 
+.ice-cream-list {
+  list-style: none;
+}
 .ice-cream-description {
   color: #565C66;
   font-weight: 400;
-  line-height: 22px;
   text-align: center;
 }
 
 .ice-cream-price {
   font-weight: 700;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .shop-description {
   color: #565C66;
   font-weight: 400;
-  line-height: 22px;
 }
 
 .shop-ice-cream {
@@ -173,13 +188,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.news-and-subscription {
-  color: #565C66;
-  font-weight: 400;
-  line-height: 20px;
+.news {
+  background-image: url("../images/background/background-news.jpg");
+  width: 570px;
+  height: 224px;
+  border-radius: 16px;
 }
 
-.news-description {
+.news-tile {
+  font-weight: 400;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.news-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -187,26 +209,20 @@ body {
   color: #2D3440;
 }
 
-.subscription-description {
-  line-height: 22px;
-}
-
-.subscription-form {
-  color: #B9B9B9;
-}
-
-.news-and-subscription-one {
-  background-image: url("../images/background/background-news.jpg");
-  width: 570px;
-  height: 224px;
-  border-radius: 16px;
-}
-
-.news-and-subscription-two {
+.subscription {
   background-image: url("../images/background/background-subscription.png");
   border-radius: 16px;
   width: 570px;
   height: 224px;
+}
+
+.subscription-description {
+  color: #565C66;
+}
+
+.subscription-form {
+  color: #B9B9B9;
+  line-height: 20px;
 }
 
 .delivery {
@@ -217,13 +233,15 @@ body {
 }
 
 .delivery-description {
-  line-height: 22px;
   color: #565C66;
 }
 
 .delivery-form {
   color: #B9B9B9;
   line-height: 20px;
+  background: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .label-text {
@@ -240,13 +258,13 @@ body {
 
 .contacts-text {
   font-weight: 400;
-  line-height: 22px;
   color: #565C66;
 }
 
 .contacts-address {
   font-weight: 700;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .contacts-time {
@@ -269,12 +287,8 @@ body {
   text-decoration: none;
 }
 
-.navigation-page-link-for {
+.navigation-page-link-heart {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: #2D3440;
-  text-decoration: none;
 }
 
 .about-text {
@@ -300,11 +314,6 @@ body {
 }
 
 .breadcrumbs-creamy {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #2D3440;
   border-bottom: 1px solid #2D3440;
 }
 
@@ -312,6 +321,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #2D3440;
 }
 
 .catalog-filter-group {
@@ -322,6 +332,8 @@ body {
 
 .button-filter {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);

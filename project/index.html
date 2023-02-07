@@ -52,10 +52,10 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
-      <section class="banner-ice-cream">
+      <section class="slider-ice-cream">
         <div class="slider">
           <div class="slider-content">
-            <h2 class="title-banner">
+            <h2 class="title-slider">
               Нежный пломбир с клубничным джемом
             </h2>
             <p>
@@ -69,7 +69,7 @@
         </div>
         <div class="slider">
           <div class="slider-content">
-            <h2 class="title-banner">
+            <h2 class="title-slider">
               Сливочное мороженое со вкусом банана
             </h2>
             <p>
@@ -83,7 +83,7 @@
         </div>
         <div class="slider">
           <div class="slider-content">
-            <h2 class="title-banner">
+            <h2 class="title-slider">
               Карамельный пломбир с маршмеллоу
             </h2>
             <p>
@@ -115,6 +115,7 @@
           </li>
         </ul>
       </section>
+
       <article class="present-ice-cream">
         <div class="container">
           <h2 class="title title-center">
@@ -147,7 +148,7 @@
           <h2 class="title title-center">
             Попробуйте самые популярные вкусы нашего мороженого
           </h2>
-          <ul class="hit-ice-cream-list">
+          <ul class="ice-cream-list">
             <li class="hit-ice-cream-item">
               <img class="hit-ice-cream-image" src="images/catalog/catalog-1.png" width="168" height="168"
                 alt="малиновое мороженое">
@@ -239,36 +240,31 @@
         </div>
       </section>
 
-      <section class="news-and-subscription">
+      <article class="news">
         <div class="container">
-          <ul class="news-and-subscription-list">
-            <li class="news-and-subscription-item">
-              <div class="news-and-subscription-one">
-                <h3 class="news-tile">Новое в нашем блоге</h3>
-                <a class="news-description" href="#">
-                  10 способов сервировки фруктовых щербетов к столу
-                </a>
-              </div>
-            </li>
-            <li class="news-and-subscription-item">
-              <div class="news-and-subscription-two">
-                <h3 class="visualy-hidden">Подписка на рассылку</h3>
-                <p class="subscription-description">
-                  Подпишитесь на нашу сладкую рассылку и будьте всегда
-                  в курсе всего самого вкусного, что у нас происходит.
-                  Обещаем не спамить и не слать всякой ненужной ерунды.
-                  Честно =)
-                </p>
-                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="rield" type="email" placeholder="email@example.com" name="subscription-mail"
-                    id="subscription-email" aria-label="введите вашу почту">
-                  <button class="button" type="submit">
-                    <span class="button-text">Отправить</span>
-                  </button>
-                </form>
-              </div>
-            </li>
-          </ul>
+          <h3 class="news-tile">Новое в нашем блоге</h3>
+          <a class="news-link" href="#">
+            10 способов сервировки фруктовых щербетов к столу
+          </a>
+        </div>
+      </article>
+
+      <section class="subscription">
+        <div class="container">
+          <h3 class="visualy-hidden">Подписка на рассылку</h3>
+          <p class="subscription-description">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда
+            в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды.
+            Честно =)
+          </p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="rield" type="email" placeholder="email@example.com" name="subscription-mail"
+              id="subscription-email" aria-label="введите вашу почту">
+            <button class="button" type="submit">
+              <span class="button-text">Отправить</span>
+            </button>
+          </form>
         </div>
       </section>
 
@@ -353,7 +349,7 @@
         <nav class="navigation-page-footer" aria-label="второстепенная">
           <ul class="navigation-page-link">
             <li class="navigation-page-item">
-              <a class="navigation-page-link-for" href="#">
+              <a class="navigation-page-link navigation-page-link-heart" href="#">
                 Для поставщиков
               </a>
             </li>
