@@ -52,11 +52,11 @@ body {
   color: #2D3440;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
 }
 
 .main-header {
   line-height: 20px;
-  font-weight: 400;
 }
 
 .navigation-link {
@@ -89,7 +89,6 @@ body {
 .slider-ice-cream {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
 }
 
 .button {
@@ -127,30 +126,15 @@ body {
   height: 268px;
   border-radius: 16px;
   background-size: 219px 268px;
-  font-weight: 400;
   list-style: none;
 }
 
 .present-item-raspberries {
   background: #FF7799 url("../images/present/present-raspberries.png") no-repeat bottom right;
-  display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-padding: 36px 200px 36px 36px;
-gap: 28px;
-isolation: isolate;
 }
 
 .present-item-marshmallow {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
-  display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-padding: 36px 200px 36px 36px;
-gap: 28px;
-isolation: isolate;
 }
 
 .ice-cream-title {
@@ -165,7 +149,6 @@ isolation: isolate;
 }
 .ice-cream-description {
   color: #565C66;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -177,7 +160,6 @@ isolation: isolate;
 
 .shop-description {
   color: #565C66;
-  font-weight: 400;
 }
 
 .shop-ice-cream {
@@ -196,7 +178,6 @@ isolation: isolate;
 }
 
 .news-tile {
-  font-weight: 400;
   line-height: 20px;
   color: #565C66;
 }
@@ -257,7 +238,6 @@ isolation: isolate;
 }
 
 .contacts-text {
-  font-weight: 400;
   color: #565C66;
 }
 
@@ -268,7 +248,6 @@ isolation: isolate;
 }
 
 .contacts-time {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
@@ -280,7 +259,6 @@ isolation: isolate;
 }
 
 .navigation-page-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
@@ -292,14 +270,12 @@ isolation: isolate;
 }
 
 .about-text {
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px
 }
 
 .htmlacademy-link {
   color: #2D3440;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   border-bottom: 1px solid #2D3440;
@@ -318,7 +294,6 @@ isolation: isolate;
 }
 
 .catalog-filter {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
@@ -355,7 +330,6 @@ isolation: isolate;
 
 .pagination-link {
   text-decoration: none;
-  font-weight: 400;
   line-height: 20px;
   color: #2D3440;
 }
