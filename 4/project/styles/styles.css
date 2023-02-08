@@ -48,15 +48,28 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #FEAFC3;
-  color: #2D3440;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
   line-height: 20px;
-  font-weight: 400;
 }
 
 .navigation-link {
@@ -71,15 +84,15 @@ body {
 }
 
 .title-slider {
-  font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .title {
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .title-center {
@@ -89,12 +102,11 @@ body {
 .slider-ice-cream {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
 }
 
 .button {
-  font-weight: 700;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
@@ -104,8 +116,8 @@ body {
 }
 
 .button-type-link {
-  font-weight: 700;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #2D3440;
@@ -116,9 +128,9 @@ body {
 }
 
 .present-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
 }
 
 .present-item {
@@ -127,36 +139,21 @@ body {
   height: 268px;
   border-radius: 16px;
   background-size: 219px 268px;
-  font-weight: 400;
   list-style: none;
 }
 
 .present-item-raspberries {
   background: #FF7799 url("../images/present/present-raspberries.png") no-repeat bottom right;
-  display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-padding: 36px 200px 36px 36px;
-gap: 28px;
-isolation: isolate;
 }
 
 .present-item-marshmallow {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
-  display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-padding: 36px 200px 36px 36px;
-gap: 28px;
-isolation: isolate;
 }
 
 .ice-cream-title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -165,19 +162,17 @@ isolation: isolate;
 }
 .ice-cream-description {
   color: #565C66;
-  font-weight: 400;
   text-align: center;
 }
 
 .ice-cream-price {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .shop-description {
   color: #565C66;
-  font-weight: 400;
 }
 
 .shop-ice-cream {
@@ -196,15 +191,14 @@ isolation: isolate;
 }
 
 .news-tile {
-  font-weight: 400;
   line-height: 20px;
   color: #565C66;
 }
 
 .news-link {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-decoration: none;
   color: #2D3440;
 }
@@ -251,24 +245,22 @@ isolation: isolate;
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
   width: 1170px;
-  height: 534px;
+  height: 492px;
   border-radius: 16px;
   background-repeat: no-repeat;
 }
 
 .contacts-text {
-  font-weight: 400;
   color: #565C66;
 }
 
 .contacts-address {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .contacts-time {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
@@ -280,7 +272,6 @@ isolation: isolate;
 }
 
 .navigation-page-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
@@ -292,23 +283,21 @@ isolation: isolate;
 }
 
 .about-text {
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px
 }
 
 .htmlacademy-link {
   color: #2D3440;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   border-bottom: 1px solid #2D3440;
 }
 
 .breadcrumbs {
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
   color: #2D3440;
 }
@@ -318,22 +307,20 @@ isolation: isolate;
 }
 
 .catalog-filter {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
 }
 
 .catalog-filter-group {
-  background: #FCFCFC;
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 30%);
   border-radius: 20px;
 }
 
 .button-filter {
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
@@ -342,9 +329,9 @@ isolation: isolate;
   border-radius: 20px;
 }
 
-.button-pagination-show-more {
-  font-weight: 700;
+.button-show-more {
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #2D3440;
   background: #FCFCFC;
@@ -354,9 +341,8 @@ isolation: isolate;
 }
 
 .pagination-link {
-  text-decoration: none;
-  font-weight: 400;
   line-height: 20px;
+  text-decoration: none;
   color: #2D3440;
 }
 
