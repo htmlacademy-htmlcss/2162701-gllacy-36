@@ -48,11 +48,24 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #FEAFC3;
-  color: #2D3440;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
@@ -71,15 +84,15 @@ body {
 }
 
 .title-slider {
-  font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .title {
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .title-center {
@@ -92,8 +105,8 @@ body {
 }
 
 .button {
-  font-weight: 700;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
@@ -103,8 +116,8 @@ body {
 }
 
 .button-type-link {
-  font-weight: 700;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #2D3440;
@@ -115,9 +128,9 @@ body {
 }
 
 .present-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
 }
 
 .present-item {
@@ -138,9 +151,9 @@ body {
 }
 
 .ice-cream-title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -153,9 +166,9 @@ body {
 }
 
 .ice-cream-price {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .shop-description {
@@ -183,9 +196,9 @@ body {
 }
 
 .news-link {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-decoration: none;
   color: #2D3440;
 }
@@ -232,7 +245,7 @@ body {
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
   width: 1170px;
-  height: 534px;
+  height: 492px;
   border-radius: 16px;
   background-repeat: no-repeat;
 }
@@ -242,9 +255,9 @@ body {
 }
 
 .contacts-address {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .contacts-time {
@@ -282,9 +295,9 @@ body {
 }
 
 .breadcrumbs {
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
   color: #2D3440;
 }
@@ -300,15 +313,14 @@ body {
 }
 
 .catalog-filter-group {
-  background: #FCFCFC;
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 30%);
   border-radius: 20px;
 }
 
 .button-filter {
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
@@ -317,9 +329,9 @@ body {
   border-radius: 20px;
 }
 
-.button-pagination-show-more {
-  font-weight: 700;
+.button-show-more {
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #2D3440;
   background: #FCFCFC;
@@ -329,8 +341,8 @@ body {
 }
 
 .pagination-link {
-  text-decoration: none;
   line-height: 20px;
+  text-decoration: none;
   color: #2D3440;
 }
 
