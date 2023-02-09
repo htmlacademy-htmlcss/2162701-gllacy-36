@@ -46,6 +46,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -53,8 +57,13 @@ body {
   font-weight: 400;
   color: #2D3440;
   background-color: #FEAFC3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
+<!-- раскоментировать после добавления соц.сетей
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -67,9 +76,20 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+-->
 
+.main-container {
+  flex-grow: 1;
+}
 .main-header {
   line-height: 20px;
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-item {
+  list-style: none;
 }
 
 .navigation-link {
