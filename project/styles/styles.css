@@ -77,6 +77,9 @@ body {
 }
 -- >
 
+.main-container{
+  width: 1170px;
+}
 
 .main-header {
   line-height: 20px;
@@ -433,6 +436,10 @@ body {
   border-bottom: 1px solid #2D3440;
 }
 
+.inner-header{
+  width: 379px;
+}
+
 .breadcrumbs {
   font-size: 14px;
   line-height: 20px;
@@ -449,6 +456,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  width: 823px;
 }
 
 .catalog-filter-group {
@@ -466,6 +474,11 @@ body {
   border: 2px solid #FCFCFC;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 20px;
+}
+
+.ice-cream-list {
+  width: 1170px;
+  list-style: none;
 }
 
 .button-show-more {
