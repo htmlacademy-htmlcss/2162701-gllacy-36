@@ -63,7 +63,7 @@ body {
   min-height: 100%;
 }
 
-< !-- раскоментировать после добавления соц.сетей .visually-hidden {
+<!-- раскоментировать после добавления соц.сетей .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -75,10 +75,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+-- >
 
--- > .main-container {
-  flex-grow: 1;
-}
 
 .main-header {
   line-height: 20px;
@@ -87,15 +85,27 @@ body {
 .header-container {
   width: 1170px;
   margin: 0 auto;
+  display: flex;
 }
 
-.main-container {
-  width: 1170px;
-  margin: 0 auto;
+.header-logo {
+  display: block;
+  padding-top: 24px;
 }
 
-.navigation-item {
+.main-navigation {
+  display: flex;
+  width: 1033px;
+}
+
+.navigation-list {
   list-style: none;
+  padding: 0;
+}
+
+.main-navigation-list {
+  width: 422px;
+  margin-right: 144px;
 }
 
 .navigation-link {
@@ -107,6 +117,21 @@ body {
   color: #2D3440;
   font-weight: 700;
   text-decoration: none;
+  width: 148px;
+}
+
+.navigation-user {
+  width: 283px;
+}
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.slider-ice-cream {
+  width: 1170px;
 }
 
 .title-slider {
@@ -137,7 +162,7 @@ body {
   color: #FCFCFC;
   background: #FF2F64;
   border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 
@@ -149,7 +174,7 @@ body {
   color: #2D3440;
   background: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 
@@ -181,6 +206,10 @@ body {
 
 .present-item-marshmallow {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
+}
+
+.hit-ice-cream {
+  width: 1170px;
 }
 
 .ice-cream-title {
@@ -237,12 +266,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .index-columns {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 
@@ -267,7 +300,7 @@ body {
 }
 
 .subscription {
-  background-image: url("../images/background/background-subscription.png");
+  background-image: url("../images/background/background-subscription.jpg");
   border-radius: 16px;
   width: 570px;
   height: 224px;
@@ -299,6 +332,8 @@ body {
   width: 1170px;
   height: 534px;
   border-radius: 16px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .delivery-description {
@@ -309,7 +344,7 @@ body {
   width: 500px;
   height: 406px;
   background: #FCFCFC;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   margin-left: 606px;
 }
@@ -334,7 +369,7 @@ body {
   width: 343px;
   height: 364px;
   background: #FCFCFC;
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   margin-left: 64px;
 }
@@ -360,6 +395,17 @@ body {
   color: #2D3440;
 }
 
+.container-page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-page-footer{
+  width: 356px;
+}
+
 .navigation-page-link {
   font-size: 14px;
   line-height: 20px;
@@ -374,6 +420,10 @@ body {
 .about-text {
   font-size: 12px;
   line-height: 16px
+}
+
+.logo-html {
+  padding-top: 48px;
 }
 
 .htmlacademy-link {
@@ -414,7 +464,7 @@ body {
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 20px;
 }
 
@@ -425,7 +475,7 @@ body {
   color: #2D3440;
   background: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 
