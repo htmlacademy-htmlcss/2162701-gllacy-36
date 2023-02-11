@@ -67,7 +67,7 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: 0;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -126,6 +126,7 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 .main-container {
@@ -148,6 +149,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0;
 }
 
 .title-center {
@@ -348,7 +350,7 @@ body {
 
 .container-delivery {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .delivery-description {
   color: #565C66;
@@ -356,6 +358,7 @@ body {
 
 .delivery-title {
   width: 380px;
+  margin: 167px 100px;
 }
 
 .delivery-content {
@@ -364,6 +367,7 @@ body {
   background: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
+  margin: 64px;
 }
 .delivery-form {
   color: #B9B9B9;
@@ -392,6 +396,10 @@ body {
   background: #FCFCFC;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
+}
+
+.contacts-list {
+  margin: 0;
 }
 
 .contacts-text {
