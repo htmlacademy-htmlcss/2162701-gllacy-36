@@ -63,11 +63,11 @@ body {
   min-height: 100%;
 }
 
-<!-- раскоментировать после добавления соц.сетей .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  margin: -1;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -75,18 +75,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
--- >
-
-.main-container{
-  width: 1170px;
-}
 
 .main-header {
   line-height: 20px;
 }
 
 .header-container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
 }
@@ -125,6 +120,12 @@ body {
 
 .navigation-user {
   width: 283px;
+}
+
+.main-index {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -224,6 +225,12 @@ body {
 
 .ice-cream-list {
   list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.catalog-ice-list {
+  flex-wrap: wrap;
 }
 
 .ice-cream-description {
@@ -339,8 +346,16 @@ body {
   margin-bottom: 80px;
 }
 
+.container-delivery {
+  display: flex;
+  justify-content: space-around;
+}
 .delivery-description {
   color: #565C66;
+}
+
+.delivery-title {
+  width: 380px;
 }
 
 .delivery-content {
@@ -349,7 +364,6 @@ body {
   background: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-  margin-left: 606px;
 }
 .delivery-form {
   color: #B9B9B9;
@@ -366,6 +380,10 @@ body {
   height: 492px;
   border-radius: 16px;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 64px;
+  margin: 0;
+
 }
 
 .container-contacts {
@@ -374,7 +392,6 @@ body {
   background: #FCFCFC;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-  margin-left: 64px;
 }
 
 .contacts-text {
@@ -446,6 +463,8 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #2D3440;
+  list-style: none;
+  display: flex;
 }
 
 .breadcrumbs-creamy {
