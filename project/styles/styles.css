@@ -46,6 +46,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -53,13 +57,17 @@ body {
   font-weight: 400;
   color: #2D3440;
   background-color: #FEAFC3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  margin: -1;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -72,6 +80,32 @@ body {
   line-height: 20px;
 }
 
+.header-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-logo {
+  display: block;
+  padding-top: 24px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1033px;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.main-navigation-list {
+  width: 422px;
+  margin-right: 144px;
+}
+
 .navigation-link {
   color: #2D3440;
   text-decoration: none;
@@ -81,6 +115,27 @@ body {
   color: #2D3440;
   font-weight: 700;
   text-decoration: none;
+  width: 148px;
+}
+
+.navigation-user {
+  width: 283px;
+}
+
+.main-index {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.slider-ice-cream {
+  width: 1170px;
 }
 
 .title-slider {
@@ -111,7 +166,7 @@ body {
   color: #FCFCFC;
   background: #FF2F64;
   border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 
@@ -123,7 +178,7 @@ body {
   color: #2D3440;
   background: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 
@@ -131,6 +186,13 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.present-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .present-item {
@@ -150,6 +212,10 @@ body {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
 }
 
+.hit-ice-cream {
+  width: 1170px;
+}
+
 .ice-cream-title {
   font-size: 20px;
   line-height: 24px;
@@ -159,7 +225,14 @@ body {
 
 .ice-cream-list {
   list-style: none;
+  display: flex;
+  padding: 0;
 }
+
+.catalog-ice-list {
+  flex-wrap: wrap;
+}
+
 .ice-cream-description {
   color: #565C66;
   text-align: center;
@@ -175,13 +248,46 @@ body {
   color: #565C66;
 }
 
+.container-shop {
+  width: 1122px;
+  height: 432px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.shop-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  width: 505px;
+}
+
 .shop-ice-cream {
-  background-image: url("../images/background/background-shop-ice-cream.png");
+  background-image: url("../images/background/background-shop-ice-cream.jpg");
   width: 1170px;
   height: 480px;
   border-radius: 16px;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 
 .news {
   background-image: url("../images/background/background-news.jpg");
@@ -204,10 +310,22 @@ body {
 }
 
 .subscription {
-  background-image: url("../images/background/background-subscription.png");
+  background-image: url("../images/background/background-subscription.jpg");
   border-radius: 16px;
   width: 570px;
   height: 224px;
+}
+
+.container-subscription {
+  width: 558px;
+  height: 212px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-top: 6px;
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .subscription-description {
@@ -224,18 +342,32 @@ body {
   width: 1170px;
   height: 534px;
   border-radius: 16px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
+.container-delivery {
+  display: flex;
+  justify-content: space-around;
+}
 .delivery-description {
   color: #565C66;
 }
 
+.delivery-title {
+  width: 380px;
+}
+
+.delivery-content {
+  width: 500px;
+  height: 406px;
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
 .delivery-form {
   color: #B9B9B9;
   line-height: 20px;
-  background: #FCFCFC;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
-  border-radius: 8px;
 }
 
 .label-text {
@@ -248,6 +380,18 @@ body {
   height: 492px;
   border-radius: 16px;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 64px;
+  margin: 0;
+
+}
+
+.container-contacts {
+  width: 343px;
+  height: 364px;
+  background: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .contacts-text {
@@ -271,6 +415,17 @@ body {
   color: #2D3440;
 }
 
+.container-page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-page-footer{
+  width: 356px;
+}
+
 .navigation-page-link {
   font-size: 14px;
   line-height: 20px;
@@ -287,11 +442,19 @@ body {
   line-height: 16px
 }
 
+.logo-html {
+  padding-top: 48px;
+}
+
 .htmlacademy-link {
   color: #2D3440;
   font-size: 12px;
   line-height: 16px;
   border-bottom: 1px solid #2D3440;
+}
+
+.inner-header{
+  width: 379px;
 }
 
 .breadcrumbs {
@@ -300,6 +463,8 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #2D3440;
+  list-style: none;
+  display: flex;
 }
 
 .breadcrumbs-creamy {
@@ -310,6 +475,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  width: 823px;
 }
 
 .catalog-filter-group {
@@ -325,8 +491,13 @@ body {
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 20px;
+}
+
+.ice-cream-list {
+  width: 1170px;
+  list-style: none;
 }
 
 .button-show-more {
@@ -336,7 +507,7 @@ body {
   color: #2D3440;
   background: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
 }
 

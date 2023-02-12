@@ -9,12 +9,10 @@
 
   <body>
     <header class="main-header">
-      <div class="container">
-        <a class="navigation-logo" href="index.html">
-          <img class="header-logo" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси">
-        </a>
+      <div class="header-container">
+        <img class="header-logo" href="index.html" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси">
         <nav class="main-navigation" aria-label="основная">
-          <ul class="navigation-list">
+          <ul class="navigation-list main-navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">
                 Каталог
@@ -34,8 +32,8 @@
           <a class="contacts-phone" href="tel:+78005558628">
             +7 800 555-86-28
           </a>
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
               <button class="navigation-user-button" type="button" aria-label="поиск по сайту"></button>
             </li>
             <li class="navigation-item">
@@ -52,7 +50,9 @@
         </nav>
       </div>
     </header>
-    <main class="inner">
+
+    <main class="inner main-container">
+
       <header class="inner-header">
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -144,7 +144,7 @@
           </fieldset>
           <button class="button-filter" type="submit">Применить</button>
         </form>
-        <ul class="ice-cream-list">
+        <ul class="ice-cream-list catalog-ice-list">
           <li class="ice-cream-item">
             <img class="ice-cream-image" src="images/catalog/catalog-1.png" width="168" height="168" alt="малиновое морожное">
             <h3 class="ice-cream-title">
@@ -329,7 +329,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container-page-footer">
         <ul class="social">
           <li class="social-item">
             <a class="social-button" href="https://t.me/htmlacademy">
@@ -373,7 +373,7 @@
         </nav>
         <div class="html-academy-element">
           <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="logo" src="images/logo_htmlacademy.svg" width="93" height="27" alt="html academy">
+            <img class="logo-html" src="images/logo_htmlacademy.svg" width="93" height="27" alt="html academy">
           </a>
           <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
             2021
