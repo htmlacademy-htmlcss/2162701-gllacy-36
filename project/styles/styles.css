@@ -89,26 +89,36 @@ body {
 .header-logo {
   display: block;
   padding-top: 24px;
+  margin-right: 32px;
 }
 
 .main-navigation {
   display: flex;
   width: 1033px;
+  justify-content: space-between;
 }
 
 .navigation-list {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 .main-navigation-list {
-  width: 422px;
-  margin-right: 144px;
+  width: 586px;
+  margin-top: 41px;
+}
+
+.navigation-user {
+  width: 283px;
+  margin-top: 35px;
+  justify-content: end;
 }
 
 .navigation-link {
   color: #2D3440;
   text-decoration: none;
+  margin-right: 32px;
 }
 
 .contacts-phone {
@@ -116,10 +126,36 @@ body {
   font-weight: 700;
   text-decoration: none;
   width: 148px;
+  display: block;
+  margin-top: 42px;
 }
 
-.navigation-user {
-  width: 283px;
+.navigation-user-button{
+  margin-left: 16px;
+}
+
+.user-button-search {
+  width: 32px;
+  height: 32px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+  border: rgba(252, 252, 252, 0.3);
+}
+
+.user-button-enter {
+  width: 88px;
+  height: 32px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  border: rgba(252, 252, 252, 0.3);
+}
+
+.user-button-basket {
+  width: 115px;
+  height: 32px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  border: rgba(252, 252, 252, 0.3);
 }
 
 .main-index {
@@ -167,9 +203,10 @@ body {
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
-  border: 4px solid rgba(255, 47, 100, 0.3);
+  border: 4px solid rgba(252, 252, 252, 0.4);;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  padding: 12px 32px;
 }
 
 .button-type-link {
@@ -179,9 +216,14 @@ body {
   text-decoration: none;
   color: #2D3440;
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.container-present {
+  margin-top: 80px;
 }
 
 .present-title {
@@ -214,8 +256,9 @@ body {
   background: #FF7799 url("../images/present/present-marshmallow.png") no-repeat bottom right;
 }
 
-.hit-ice-cream {
+.container-hit {
   width: 1170px;
+  margin-top: 80px;
 }
 
 .ice-cream-title {
@@ -223,16 +266,39 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+}
+
+.ice-cream-description {
+  margin: 0;
+}
+
+.ice-cream-item {
+  width: 270px;
+  height: 281px;
+  background: #FCFCFC;
+  border-radius: 8px;
+}
+
+.ice-cream-svg {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .ice-cream-list {
   list-style: none;
   display: flex;
   padding: 0;
+  justify-content: space-between;
 }
 
 .catalog-ice-list {
   flex-wrap: wrap;
+}
+
+.catalog-ice-item {
+  margin-top: 40px;
 }
 
 .ice-cream-description {
@@ -501,6 +567,7 @@ body {
   border: 2px solid #FCFCFC;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 20px;
+  padding: 8px 32px;
 }
 
 .ice-cream-list {
@@ -514,9 +581,15 @@ body {
   text-align: center;
   color: #2D3440;
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
 }
 
 .pagination-link {
