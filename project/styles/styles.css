@@ -84,11 +84,13 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
 }
 
 .header-logo {
   display: block;
-  padding-top: 24px;
   margin-right: 32px;
 }
 
@@ -96,6 +98,7 @@ body {
   display: flex;
   width: 1033px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-list {
@@ -107,12 +110,10 @@ body {
 
 .main-navigation-list {
   width: 586px;
-  margin-top: 34px;
 }
 
 .navigation-user {
   width: 283px;
-  margin-top: 35px;
   justify-content: end;
 }
 
@@ -120,7 +121,7 @@ body {
   color: #2D3440;
   text-decoration: none;
   margin-right: 32px;
-  display: block;
+  display: inline-block;
   padding: 8px 16px;
 }
 
@@ -130,7 +131,6 @@ body {
   text-decoration: none;
   width: 148px;
   display: block;
-  margin-top: 42px;
 }
 
 .navigation-user-button {
@@ -260,6 +260,7 @@ display: flex;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
+  display: inline-block;
 }
 
 .button-type-link {
@@ -274,6 +275,7 @@ display: flex;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
+  display: inline-block;
 }
 
 .title-present {
@@ -293,6 +295,7 @@ display: flex;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .present-item {
@@ -353,6 +356,7 @@ display: flex;
 
 .catalog-ice-list {
   flex-wrap: wrap;
+  margin-bottom: 57px;
 }
 
 .catalog-ice-item {
@@ -392,6 +396,7 @@ display: flex;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .shop-item {
@@ -473,7 +478,7 @@ display: flex;
 }
 
 .button-subscription {
-  min-idth: 152px;
+  min-width: 152px;
   min-height: 44px;
 }
 
@@ -577,11 +582,16 @@ display: flex;
   width: 356px;
 }
 
+.navigation-page-footer-link {
+  list-style: none;
+}
+
 .navigation-page-link {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+  display: inline-block;
 }
 
 .navigation-page-link-heart {
@@ -602,10 +612,10 @@ display: flex;
   font-size: 12px;
   line-height: 16px;
   border-bottom: 1px solid #2D3440;
+  display: inline-block;
 }
 
 .inner-header {
-  width: 400px;
   margin-bottom: 40px;
 }
 
@@ -619,12 +629,14 @@ display: flex;
   margin-bottom: 16px;
   margin-right: 28px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
   color: #2D3440;
   margin-right: 28px;
+  display: inline-block;
 }
 
 .breadcrumbs-creamy {
@@ -644,6 +656,12 @@ display: flex;
   border-radius: 20px;
 }
 
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .button-filter {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -656,6 +674,7 @@ display: flex;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 20px;
   padding: 8px 32px;
+  display: inline-block;
 }
 
 .ice-cream-list {
@@ -674,12 +693,17 @@ display: flex;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
-  margin-top: 37px;
+  display: inline-block;
+  margin-right: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .pagination-show-more {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination {
@@ -687,8 +711,6 @@ display: flex;
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 53px;
-  margin-left: 340px;
 }
 
 .pagination-item:not(:last-child) {
@@ -699,6 +721,7 @@ display: flex;
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+  display: inline-block;
 }
 
 .pagination-current {
@@ -708,4 +731,5 @@ display: flex;
   height: 24px;
   padding: 2px 8px;
   gap: 10px;
+  box-sizing: border-box;
 }
