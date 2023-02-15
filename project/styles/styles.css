@@ -348,19 +348,17 @@ display: flex;
 
 .ice-cream-list {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  gap: 90px 30px;
   padding: 0;
-  margin: 0;
-  justify-content: space-between;
 }
 
 .catalog-ice-list {
-  flex-wrap: wrap;
-  margin-bottom: 57px;
 }
 
 .catalog-ice-item {
-  margin-top: 40px;
+
 }
 
 .ice-cream-description {
