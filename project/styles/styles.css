@@ -354,11 +354,8 @@ display: flex;
   padding: 0;
 }
 
-.catalog-ice-list {
-}
-
-.catalog-ice-item {
-
+.container-catalog {
+  margin-bottom: 16px;
 }
 
 .ice-cream-description {
@@ -417,7 +414,6 @@ display: flex;
   justify-content: space-between;
   padding: 0;
 }
-
 
 .news {
   background-image: url("../images/background/background-news.jpg");
@@ -494,6 +490,7 @@ display: flex;
 .delivery-description {
   margin: 0;
   color: #565C66;
+  margin-bottom: 32px;
 }
 
 .delivery-title-description {
@@ -514,16 +511,34 @@ display: flex;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   margin: 64px;
+  padding: 40px;
+  padding-bottom: 42px;
 }
 
 .delivery-form {
   color: #B9B9B9;
   line-height: 20px;
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.form-label-address {
+  grid-column: 1/-1;
+}
+
+.button-delivery{
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: end;
 }
 
 .label-text {
   color: #2D3440;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
@@ -546,6 +561,7 @@ display: flex;
 
 .contacts-list {
   margin: 0;
+  padding: 40px 40px 32px;
 }
 
 .contacts-text {
@@ -702,6 +718,7 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 41px;
 }
 
 .pagination {
