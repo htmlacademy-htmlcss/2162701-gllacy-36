@@ -331,9 +331,7 @@ display: flex;
   margin-bottom: 56px;
 }
 
-.ice-cream-title-link {
-  text-decoration: none;
-  display: inline-block;
+.ice-cream-title {
   padding: 16px 40px;
 }
 
@@ -348,23 +346,29 @@ display: flex;
 
 .ice-cream-description {
   margin: 0;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .ice-cream-background {
   min-height: 281px;
   border-radius: 8px;
   background: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .ice-cream-item {
   width: 270px;
-  min-height: 322px;
+  min-height: 332px;
   display: flex;
   align-items: end;
 }
 
 .ice-cream-image {
   margin-top: -51px;
-  margin-left: 51px;
   object-fit: contain;
 }
 
@@ -639,14 +643,15 @@ display: flex;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.navigation-page-footer {
-  width: 356px;
+  align-items: center;
+  margin-top: 48px;
 }
 
 .navigation-page-footer-link {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 24px;
 }
 
 .navigation-page-link {
@@ -663,12 +668,9 @@ display: flex;
 
 .about-text {
   font-size: 12px;
-  line-height: 16px
-}
-
-.logo-html {
-  margin-top: 48px;
-}
+  line-height: 16px;
+  margin: 0;
+  }
 
 .htmlacademy-link {
   color: #2D3440;
