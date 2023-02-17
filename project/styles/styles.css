@@ -235,6 +235,10 @@ display: flex;
   line-height: 24px;
 }
 
+.slider-image-ice-cream{
+  object-fit: contain;
+}
+
 .social {
   margin: 0;
   padding: 0;
@@ -256,11 +260,11 @@ display: flex;
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow:0 0 0 4px rgba(255, 47, 100, 0.3);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
+  border: none;
 }
 
 .button-type-link {
@@ -271,11 +275,11 @@ display: flex;
   text-decoration: none;
   color: #2D3440;
   background: #FCFCFC;
-  border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow:  0 0 0 4px rgba(252, 252, 252, 0.4);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
+  border: none;
 }
 
 .title-present {
@@ -288,6 +292,7 @@ display: flex;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .present-list {
@@ -296,6 +301,11 @@ display: flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.present-content {
+  width: 317px;
+  padding: 36px;
 }
 
 .present-item {
@@ -323,6 +333,8 @@ display: flex;
 
 .ice-cream-title-link {
   text-decoration: none;
+  display: inline-block;
+  padding: 16px 40px;
 }
 
 .ice-cream-title {
@@ -338,11 +350,22 @@ display: flex;
   margin: 0;
 }
 
+.ice-cream-background {
+  min-height: 281px;
+  border-radius: 8px;
+  background: #FCFCFC;
+}
 .ice-cream-item {
   width: 270px;
-  height: 281px;
-  background: #FCFCFC;
-  border-radius: 8px;
+  min-height: 322px;
+  display: flex;
+  align-items: end;
+}
+
+.ice-cream-image {
+  margin-top: -51px;
+  margin-left: 51px;
+  object-fit: contain;
 }
 
 .ice-cream-svg {
@@ -355,8 +378,9 @@ display: flex;
   list-style: none;
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 90px 30px;
+  gap: 40px 30px;
   padding: 0;
+  margin: 0 auto;
 }
 
 .container-catalog {
@@ -461,19 +485,25 @@ display: flex;
   border-radius: 16px;
   margin-top: 6px;
   margin-left: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
 }
 
 .subscription-description {
   color: #565C66;
   margin: 0;
+  padding: 26px;
 }
 
-.button-text .subscription-form {
+.rield {
+  min-width: 332px;
+  margin-right: 18px;
+}
+
+.subscription-form {
   color: #B9B9B9;
   line-height: 20px;
+  display: flex;
+  padding-left: 26px;
 }
 
 .button-subscription {
@@ -571,23 +601,37 @@ display: flex;
 
 .contacts-text {
   color: #565C66;
+  margin-bottom: 12px;
 }
 
 .contacts-address {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-telephone {
+  margin: 0;
 }
 
 .contacts-time {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  display: block;
 }
 
 .contacts-telephone-text {
   text-decoration: none;
   color: #2D3440;
+  font-weight: 700;
+}
+
+.button-contacts {
+  display: block;
+  margin: 0 auto;
 }
 
 .container-page-footer {
