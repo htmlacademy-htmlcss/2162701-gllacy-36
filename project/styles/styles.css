@@ -235,6 +235,10 @@ display: flex;
   line-height: 24px;
 }
 
+.slider-image-ice-cream{
+  object-fit: contain;
+}
+
 .social {
   margin: 0;
   padding: 0;
@@ -256,11 +260,11 @@ display: flex;
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow:0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
+  border: none;
 }
 
 .button-type-link {
@@ -271,11 +275,11 @@ display: flex;
   text-decoration: none;
   color: #2D3440;
   background: #FCFCFC;
-  border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow:  0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
+  border: none;
 }
 
 .title-present {
@@ -288,14 +292,18 @@ display: flex;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .present-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.present-content {
+  width: 317px;
+  padding: 36px;
 }
 
 .present-item {
@@ -322,22 +330,44 @@ display: flex;
 }
 
 .ice-cream-title {
+  padding: 16px 40px;
+}
+
+.ice-cream-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   margin: 0;
+  color: #2D3440;
 }
 
 .ice-cream-description {
   margin: 0;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.ice-cream-background {
+  min-height: 281px;
+  border-radius: 8px;
+  background: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ice-cream-item {
   width: 270px;
-  height: 281px;
-  background: #FCFCFC;
-  border-radius: 8px;
+  min-height: 332px;
+  display: flex;
+  align-items: end;
+}
+
+.ice-cream-image {
+  margin-top: -51px;
+  object-fit: contain;
 }
 
 .ice-cream-svg {
@@ -348,19 +378,15 @@ display: flex;
 
 .ice-cream-list {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
   padding: 0;
-  margin: 0;
-  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.catalog-ice-list {
-  flex-wrap: wrap;
-  margin-bottom: 57px;
-}
-
-.catalog-ice-item {
-  margin-top: 40px;
+.container-catalog {
+  margin-bottom: 16px;
 }
 
 .ice-cream-description {
@@ -376,11 +402,12 @@ display: flex;
 
 .title-shop {
   width: 995px;
-  margin: 56px 63px;
+  padding: 56px 63px;
 }
 
 .shop-description {
   color: #565C66;
+  margin: 0;
 }
 
 .container-shop {
@@ -391,12 +418,14 @@ display: flex;
 }
 
 .shop-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 56px;
+  display: grid;
   list-style: none;
+  grid-template-columns: repeat(2, auto);
+  gap: 40px 32px;
+  margin: 0;
 }
 
 .shop-item {
@@ -415,11 +444,10 @@ display: flex;
 }
 
 .index-columns {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
-
 
 .news {
   background-image: url("../images/background/background-news.jpg");
@@ -462,19 +490,25 @@ display: flex;
   border-radius: 16px;
   margin-top: 6px;
   margin-left: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
 }
 
 .subscription-description {
   color: #565C66;
   margin: 0;
+  padding: 26px;
 }
 
-.button-text .subscription-form {
+.rield {
+  min-width: 332px;
+  margin-right: 18px;
+}
+
+.subscription-form {
   color: #B9B9B9;
   line-height: 20px;
+  display: flex;
+  padding-left: 26px;
 }
 
 .button-subscription {
@@ -496,6 +530,7 @@ display: flex;
 .delivery-description {
   margin: 0;
   color: #565C66;
+  margin-bottom: 32px;
 }
 
 .delivery-title-description {
@@ -516,16 +551,34 @@ display: flex;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   margin: 64px;
+  padding: 40px;
+  padding-bottom: 42px;
 }
 
 .delivery-form {
   color: #B9B9B9;
   line-height: 20px;
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.form-label-address {
+  grid-column: 1/-1;
+}
+
+.button-delivery{
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: end;
 }
 
 .label-text {
   color: #2D3440;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
@@ -548,27 +601,42 @@ display: flex;
 
 .contacts-list {
   margin: 0;
+  padding: 40px 40px 32px;
 }
 
 .contacts-text {
   color: #565C66;
+  margin-bottom: 12px;
 }
 
 .contacts-address {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-telephone {
+  margin: 0;
 }
 
 .contacts-time {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  display: block;
 }
 
 .contacts-telephone-text {
   text-decoration: none;
   color: #2D3440;
+  font-weight: 700;
+}
+
+.button-contacts {
+  display: block;
+  margin: 0 auto;
 }
 
 .container-page-footer {
@@ -576,14 +644,15 @@ display: flex;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.navigation-page-footer {
-  width: 356px;
+  align-items: center;
+  margin-top: 48px;
 }
 
 .navigation-page-footer-link {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 24px;
 }
 
 .navigation-page-link {
@@ -600,12 +669,9 @@ display: flex;
 
 .about-text {
   font-size: 12px;
-  line-height: 16px
-}
-
-.logo-html {
-  margin-top: 48px;
-}
+  line-height: 16px;
+  margin: 0;
+  }
 
 .htmlacademy-link {
   color: #2D3440;
@@ -670,8 +736,8 @@ display: flex;
   text-align: center;
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #FCFCFC;
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border: none;
+  box-shadow: 0 0 0 2px #FCFCFC;
   border-radius: 20px;
   padding: 8px 32px;
   display: inline-block;
@@ -689,8 +755,8 @@ display: flex;
   text-align: center;
   color: #2D3440;
   background: #FCFCFC;
-  border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
+  border: none;
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
@@ -704,6 +770,7 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 41px;
 }
 
 .pagination {
