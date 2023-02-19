@@ -395,10 +395,22 @@ body {
   object-fit: contain;
 }
 
-.ice-cream-svg {
-  display: block;
-  width: 32px;
-  height: 32px;
+.basket-user-button{
+  display: inline-block;
+  min-width: 32px;
+  min-height: 32px;
+  background: #FF2F64;
+  border-radius: 26px;
+  border: #FF2F64;
+}
+
+.price-and-button {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 68px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 28px;
 }
 
 .ice-cream-list {
