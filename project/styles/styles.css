@@ -90,7 +90,7 @@ body {
 }
 
 .header-logo {
-  display: block;
+  display: inline-block;
   margin-right: 32px;
 }
 
@@ -135,30 +135,29 @@ body {
 
 .navigation-user-button {
   margin-left: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background: rgba(252, 252, 252, 0.3);
+  border: rgba(252, 252, 252, 0.3);
 }
 
 .user-button-search {
   min-width: 32px;
   min-height: 32px;
-  background: rgba(252, 252, 252, 0.3);
   border-radius: 27px;
-  border: rgba(252, 252, 252, 0.3);
 }
 
 .user-button-enter {
   min-width: 88px;
   min-height: 32px;
-  background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
-  border: rgba(252, 252, 252, 0.3);
 }
 
 .user-button-basket {
   min-width: 115px;
   min-height: 32px;
-  background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
-  border: rgba(252, 252, 252, 0.3);
 }
 
 .main {
@@ -187,15 +186,16 @@ body {
   width: 1170px;
 }
 
-.slider{
-display: flex;
+.slider {
+  display: flex;
 }
 
-.slider-image-ice-cream{
+.slider-image-ice-cream {
   display: block;
   margin-top: 21px;
   margin-bottom: 26px;
 }
+
 .title {
   font-size: 32px;
   line-height: 46px;
@@ -207,6 +207,7 @@ display: flex;
 .title-center {
   text-align: center;
 }
+
 .title-slider {
   font-size: 36px;
   line-height: 46px;
@@ -221,13 +222,21 @@ display: flex;
 .slider-description {
   width: 430px;
   margin: 0;
-  margin-left: 70px;
-  margin-top: 24px;
-  margin-bottom: 44px;
+  padding-left: 70px;
+  padding-top: 24px;
+  padding-bottom: 44px;
 }
 
 .button-slider {
   margin-left: 70px;
+}
+
+.slider-button-arrow {
+  border-radius: 26px;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  min-width: 38px;
+  min-height: 38px;
 }
 
 .slider-ice-cream {
@@ -235,7 +244,7 @@ display: flex;
   line-height: 24px;
 }
 
-.slider-image-ice-cream{
+.slider-image-ice-cream {
   object-fit: contain;
 }
 
@@ -245,6 +254,10 @@ display: flex;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.slider-social {
+  justify-content: end;
 }
 
 .social-item {
@@ -260,11 +273,12 @@ display: flex;
   text-align: center;
   color: #FCFCFC;
   background: #FF2F64;
-  box-shadow:0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 
 .button-type-link {
@@ -275,17 +289,19 @@ display: flex;
   text-decoration: none;
   color: #2D3440;
   background: #FCFCFC;
-  box-shadow:  0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 
 .title-present {
   width: 434px;
   margin-left: 368px;
   margin-bottom: 55px;
+  transform: rotate();
 }
 
 .present-title {
@@ -299,11 +315,20 @@ display: flex;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .present-content {
   width: 317px;
   padding: 36px;
+}
+
+.present-description {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-right: 11px;
 }
 
 .present-item {
@@ -530,7 +555,7 @@ display: flex;
 .delivery-description {
   margin: 0;
   color: #565C66;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .delivery-title-description {
@@ -567,7 +592,7 @@ display: flex;
   grid-column: 1/-1;
 }
 
-.button-delivery{
+.button-delivery {
   grid-column: 1/-1;
   justify-self: center;
   align-self: end;
@@ -606,7 +631,7 @@ display: flex;
 
 .contacts-text {
   color: #565C66;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .contacts-address {
@@ -614,7 +639,7 @@ display: flex;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-telephone {
@@ -671,7 +696,12 @@ display: flex;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  }
+}
+
+.logo-html {
+  display: inline-block;
+  margin-bottom: 14px;
+}
 
 .htmlacademy-link {
   color: #2D3440;
@@ -692,8 +722,8 @@ display: flex;
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
-  margin-right: 28px;
+  padding-bottom: 16px;
+  padding-right: 28px;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -741,6 +771,7 @@ display: flex;
   border-radius: 20px;
   padding: 8px 32px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .ice-cream-list {
@@ -764,6 +795,7 @@ display: flex;
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  cursor: pointer;
 }
 
 .pagination-show-more {
