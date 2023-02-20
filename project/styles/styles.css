@@ -125,6 +125,19 @@ body {
   padding: 8px 16px;
 }
 
+.navigation-link-svg-arrow{
+  position: relative;
+  padding-right: 38px;
+}
+
+.link-svg-arrow {
+  position: absolute;
+  margin: 0 auto;
+  left: 88px;
+  right: auto;
+  fill: #2D3440;
+}
+
 .contacts-phone {
   color: #2D3440;
   font-weight: 700;
@@ -140,6 +153,7 @@ body {
   text-align: center;
   background: rgba(252, 252, 252, 0.3);
   border: rgba(252, 252, 252, 0.3);
+  position: relative;
 }
 
 .user-button-search {
@@ -152,12 +166,42 @@ body {
   min-width: 88px;
   min-height: 32px;
   border-radius: 30px;
+  padding-left: 38px;
+  text-align: left;
+  fill: #2D3440;
 }
 
 .user-button-basket {
   min-width: 115px;
   min-height: 32px;
   border-radius: 30px;
+  padding-left: 38px;
+  text-align: left;
+  fill: #2D3440;
+}
+
+.navigation-icon-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
+}
+
+.navigation-icon-enter {
+  position: absolute;
+  left: 16px;
+  right: auto;
+  margin: 0 auto;
+}
+
+.navigation-icon-basket {
+  position: absolute;
+  margin: 0 auto;
+  left: 17px;
+  right: auto;
 }
 
 .main {
@@ -395,7 +439,7 @@ body {
   object-fit: contain;
 }
 
-.basket-user-button{
+.basket-user-button {
   display: inline-block;
   min-width: 32px;
   min-height: 32px;
