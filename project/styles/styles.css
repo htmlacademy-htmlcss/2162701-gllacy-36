@@ -120,12 +120,28 @@ body {
 .navigation-link {
   color: #2D3440;
   text-decoration: none;
-  margin-right: 32px;
   display: inline-block;
   padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
 }
 
-.navigation-link-svg-arrow{
+.navigation-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-link:active {
+  background: #FCFCFC;
+  box-shadow: 0 0 0 2px#FCFCFC;
+  border: none;
+}
+
+.navigation-link:focus-visible {
+  background: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.navigation-link-svg-arrow {
   position: relative;
   padding-right: 38px;
 }
@@ -152,8 +168,9 @@ body {
   display: inline-block;
   text-align: center;
   background: rgba(252, 252, 252, 0.3);
-  border: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
   position: relative;
+  border: none;
 }
 
 .user-button-search {
@@ -178,6 +195,19 @@ body {
   padding-left: 38px;
   text-align: left;
   fill: #2D3440;
+}
+
+.navigation-user-button:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-user-button:active {
+  background: rgba(252, 252, 252, 1);
+}
+
+.navigation-user-button:focus-visible {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
 }
 
 .navigation-icon-search {
@@ -285,23 +315,23 @@ body {
   fill: #FCFCFC;
 }
 
-.slider-button-arrow:hover{
+.slider-button-arrow:hover {
   background: #FCFCFC;
   fill: #2D3440;
 }
 
-.slider-button-arrow:active{
+.slider-button-arrow:active {
   background: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
   fill: #2D3440;
 }
 
-.slider-button-arrow:focus{
+.slider-button-arrow:focus-visible {
   box-shadow: 0 0 0 2px #2D3440;
   fill: #2D3440;
 }
 
-.slider-button-arrow:disabled{
+.slider-button-arrow:disabled {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
   fill: rgba(252, 252, 252, 0.3);
 }
@@ -333,19 +363,39 @@ body {
   margin-right: 16px;
 }
 
-.social-button-svg{
+.social-button-svg {
   fill: #FCFCFC;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
-.slider-hover {
+
+.social-button-svg:hover {
+  background: #2D3440;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+}
+
+.social-button-svg:active {
+  background: #2D3440;
+  fill: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+}
+
+.social-button-svg:focus-visible {
+  background: #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.slider-bullet {
   display: flex;
   gap: 8px;
 }
 
-.slider-hover-item {
+.slider-bullet-item {
   list-style: none;
 }
 
-.slider-hover-svg {
+.slider-bullet-svg {
   fill: rgba(252, 252, 252, 0.3);
   border: none;
   box-shadow: 0 0 0 1px rgba(252, 252, 252, 0.3);
@@ -357,16 +407,16 @@ body {
   box-shadow: 0 0 0 1px #FCFCFC;
 }
 
-.slider-hover-svg:hover {
+.slider-bullet-svg:hover {
   box-shadow: 0 0 0 1px rgba(252, 252, 252, 1);
 }
 
-.slider-hover-svg:active{
+.slider-bullet-svg:active {
   fill: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 1px rgba(252, 252, 252, 0.5);
 }
 
-.slider-hover-svg:focus {
+.slider-bullet-svg:focus-visible {
   box-shadow: 0 0 0 1px #2D3440;
 }
 
@@ -397,7 +447,7 @@ body {
   box-shadow: 0 0 0 4px rgba(45, 52, 64, 1);
 }
 
-.button:focus {
+.button:focus-visible {
   background: #FCFCFC;
   color: rgba(255, 47, 100, 1);
   box-shadow: 0 0 0 4px rgba(45, 52, 64, 1);
@@ -430,17 +480,17 @@ body {
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 1);
 }
 
-.button-type-link:active{
+.button-type-link:active {
   background: #FCFCFC;
   box-shadow: 0 0 0 4px rgba(45, 52, 64, 1);
 }
 
-.button-type-link:focus{
+.button-type-link:focus {
   background: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 4px rgba(45, 52, 64, 1);
 }
 
-.button-type-link:disabled{
+.button-type-link:disabled {
   background: rgba(252, 252, 252, 0.4);
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
 }
@@ -642,19 +692,19 @@ body {
   background-size: 48px 48px;
 }
 
-.shop-item-ice-cream{
+.shop-item-ice-cream {
   background-image: url("../images/ice-cream.svg");
 }
 
-.shop-item-cow{
+.shop-item-cow {
   background-image: url("../images/cow.svg");
 }
 
-.shop-item-leaf{
+.shop-item-leaf {
   background-image: url("../images/leaf.svg");
 }
 
-.shop-item-thermometer{
+.shop-item-thermometer {
   background-image: url("../images/thermometer.svg");
 }
 
@@ -726,7 +776,7 @@ body {
 }
 
 .rield {
-  min-width: 332px;
+  min-width: 330px;
   margin-right: 18px;
 }
 
@@ -740,6 +790,18 @@ body {
 .button-subscription {
   min-width: 152px;
   min-height: 44px;
+}
+
+.field:default {
+  border: 1px solid #B9B9B9;
+}
+
+.field:hover {
+  border: 1px solid #2D3440;
+}
+
+.field:focus {
+  border: 2px solid #2D3440;
 }
 
 .delivery {
@@ -804,7 +866,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
@@ -889,15 +950,19 @@ body {
   display: inline-block;
 }
 
-.navigation-page-item{
+.navigation-page-item {
   padding-left: 24px;
+  position: relative;
 }
 
-.navigation-page-item-heart{
+.navigation-page-item-heart::before {
   background-image: url("../images/heart.svg");
-  background-repeat: no-repeat;
-  background-size: 14px 12px;
-  background-position: left;
+  width: 14px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 4px;
 }
 
 .navigation-page-link-heart {
@@ -940,16 +1005,31 @@ body {
   flex-wrap: wrap;
 }
 
-.breadcrumbs-item {
-}
-
 .breadcrumbs-link {
   text-decoration: none;
   color: #2D3440;
-  padding-right: 28px;
   display: inline-block;
+}
+
+.breadcrumbs-item {
+  padding-right: 28px;
+  position: relative;
+}
+
+.breadcrumbs-item:last-child {
+  border-bottom: 1px solid #2D3440;
+  padding-right: 0;
+}
+
+.breadcrumbs-item:not(:last-child):before {
   background-image: url("../images/chevrons-right.svg");
-  background-repeat: no-repeat;
+  fill: #2D3440;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: 63px;
+  top: 3px;
 }
 
 .breadcrumbs-creamy {
@@ -992,18 +1072,21 @@ body {
   cursor: pointer;
 }
 
-.button-filter:hover{
+.button-filter:hover {
   background: #FCFCFC;
 }
-.button-filter:active{
+
+.button-filter:active {
   background: rgba(252, 252, 252, 0.5);
 }
-.button-filter:focus{
-  box-shadow: 0 0 0 2px  rgba(45, 52, 64, 1);
+
+.button-filter:focus {
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
-.button-filter:disabled{
+
+.button-filter:disabled {
   color: rgba(45, 52, 64, 0.5);
-  box-shadow: 0 0 0 2px  rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
 }
 
 .ice-cream-list {
