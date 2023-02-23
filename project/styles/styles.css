@@ -89,9 +89,13 @@ body {
   align-items: center;
 }
 
-.header-logo {
+.logo {
+  position: absolute;
+}
+
+.header-logo-link {
   display: inline-block;
-  margin-right: 32px;
+  padding-bottom: 50px;
 }
 
 .main-navigation {
@@ -99,6 +103,7 @@ body {
   width: 1033px;
   justify-content: space-between;
   align-items: center;
+  margin-left: 153px;
 }
 
 .navigation-list {
@@ -346,16 +351,13 @@ body {
   object-fit: contain;
 }
 
-.social {
+.slider-social {
+  justify-content: end;
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-}
-
-.slider-social {
-  justify-content: end;
 }
 
 .social-item {
@@ -369,11 +371,34 @@ body {
   border: none;
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
+
+.social-button-svg:focus-visible {
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.social-button-svg:focus-visible .path-social-svg {
+  fill: #2D3440;
+}
+
 .social-button-svg:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
 }
+
 .social-button-svg:hover .path-social-svg {
   fill: #2D3440;
+}
+
+.social-button-svg:active {
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
+  opacity: 0.5;
+}
+
+.social-button-svg:active .path-social-svg {
+  fill: rgba(45, 52, 64, 1);
+}
+
+.social-button-svg:active .react-social-svg {
+  fill: rgba(252, 252, 252, 1);
 }
 
 .slider-bullet {
@@ -922,8 +947,16 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 48px;
+}
+
+.social {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-page-footer-link {
@@ -966,9 +999,15 @@ body {
   margin: 0;
 }
 
-.logo-html {
+.html-academy-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-htmlacademy-link {
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .htmlacademy-link {
@@ -977,6 +1016,7 @@ body {
   line-height: 16px;
   border-bottom: 1px solid #2D3440;
   display: inline-block;
+  text-decoration: none;
 }
 
 .inner-header {
@@ -1147,7 +1187,7 @@ body {
   position: relative;
 }
 
-.pagination-item:not(:first-child):not(:last-child):focus{
+.pagination-item:not(:first-child):not(:last-child):focus {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 50px;
   width: 24px;
