@@ -907,8 +907,7 @@ a.button-type-link:disabled {
   padding: 14px 16px;
   font-family: "Inter", sans-serif;
   border-radius: 4px;
-  letter-spacing: 1.5px;
-  size: 16px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -1539,6 +1538,15 @@ a.button-type-link:disabled {
 
 .popover-open {
   display: block;
+}
+
+.popover-search {
+  width: 356px;
+  padding: 24px 16px;
+}
+
+.input-search {
+  width: 324px;
 }
 
 .popover-basket {
