@@ -48,7 +48,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </button>
-              <div class="popover popover-search popover-open">
+              <div class="popover popover-search">
                 <div class="popover-content-search">
                   <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="get">
                     <input class="field input-search" type="search" name="search-text" placeholder="Поиск по сайту"
@@ -67,6 +67,28 @@
                 </svg>
                 <span class="navigation-user-button-text">Вход</span>
               </button>
+              <div class="popover popover-enter popover-open">
+                <div class="popover-content-enter">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form class="popover-enter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="field popover-field" name="email" type="email" placeholder="email@example.com" aria-label="введите вашу почту">
+                    <input class="field popover-field" name="password" type="password" placeholder="....." aria-label="введите ваш пароль">
+                  </form>
+                  <div class="link-decoration-button">
+                  <button class="button" type="submit">
+                    <span class="button-text">Войти</span>
+                  </button>
+                  <ul class="user-link-list">
+                    <li class="user-link-item">
+                  <a class="user-link" href="#">Забыли пароль?</a>
+                </li>
+                <li class="user-link-item">
+                  <a class="user-link" href="#">Регистрация</a>
+                  </li>
+                </ul>
+              </div>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <button class="navigation-user-button user-button-basket" type="button" aria-label="корзина">
@@ -112,7 +134,7 @@
                     </li>
                   </ul>
                   <div class="popover-decoration">
-                    <button class="button popover-button-decoration" type="submit">
+                    <button class="button" type="submit">
                       <span class="button-text">Оформить заказ</span>
                     </button>
                     <span class="popover-ice-cream-price">Итого: 790 ₽</span>
@@ -150,53 +172,10 @@
               </p>
               <a class="button-type-link button-slider" href="#">Заказать</a>
             </div>
-            <div class="slider-image-substrate">
-              <img class="slider-image-ice-cream" src="images/slider/slider-1.png" width="329" height="507"
-                alt="Клубничное мороженое.">
-              <div class="slider-prev-next">
-                <button class="slider-button-arrow slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </button>
-                <button class="slider-button-arrow slider-next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="slider-image-substrate-mini image-mini">
-              <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
-                alt="Банановое мороженое.">
-            </div>
-            <div class="slider-image-substrate-mini">
-              <img class="slider-image-ice-cream-mini" src="images/slider/slider-3.png" width="66" height="150"
-                alt="Карамельное мороженое.">
-            </div>
-
-            <!-- <div class="slider-2">
-              <div class="slider-content">
-                <h2 class="title-slider">
-                  Сливочное мороженое со вкусом банана
-                </h2>
-                <p class="slider-description">
-                  Сливочное мороженное с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
-                  летний день.
-                </p>
-                <a class="button-type-link button-slider" href="#">Заказать</a>
-              </div>
-              <div class="slider-image-substrate">
-              <img class="slider-image-ice-cream" src="images/slider/slider-2.png" width="329" height="507"
-                alt="Банановое мороженое.">
+            <ol class="slider-image-list">
+              <li class="slider-image-item slider-image-item-max">
+                <img class="slider-image-ice-cream" src="images/slider/slider-1.png" width="327" height="507"
+                  alt="Клубничное мороженое.">
                 <div class="slider-prev-next">
                   <button class="slider-button-arrow slider-prev" type="button">
                     <span class="visually-hidden">Предыдущее фото</span>
@@ -217,60 +196,112 @@
                     </svg>
                   </button>
                 </div>
-            </div>
-              <div class="slider-image-substrate-mini image-mini">
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
+                <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
+                  alt="Банановое мороженое.">
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
                 <img class="slider-image-ice-cream-mini" src="images/slider/slider-3.png" width="66" height="150"
                   alt="Карамельное мороженое.">
-              </div>
-              <div class="slider-image-substrate-mini">
-                <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
-                  alt="Карамельное мороженое.">
-              </div>-->
+              </li>
+            </ol>
 
-            <!-- <div class="slider-3">
-            <div class="slider-content">
-              <h2 class="title-slider">
-                Карамельный пломбир с маршмеллоу
-              </h2>
-              <p class="slider-description">
-                Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет<br>
-                сердца сладкоежек всех
-                возрастов.
-              </p>
-              <a class="button-type-link button-slider" href="#">Заказать</a>
-            </div>
-            <div class="slider-image-substrate">
-              <img class="slider-image-ice-cream" src="images/slider/slider-3.png" width="329" height="507"
-                alt="Карамельное мороженое.">
-              <div class="slider-prev-next">
-                <button class="slider-button-arrow slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </button>
-                <button class="slider-button-arrow slider-next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </button>
+
+            <div class="slider-2">
+              <div class="slider-content">
+                <h2 class="title-slider">
+                  Сливочное мороженое со вкусом банана
+                </h2>
+                <p class="slider-description">
+                  Сливочное мороженное с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
+                  летний день.
+                </p>
+                <a class="button-type-link button-slider" href="#">Заказать</a>
               </div>
+              <ol class="slider-image-list">
+                <li class="slider-image-item slider-2-image-item-max">
+                  <img class="slider-image-ice-cream" src="images/slider/slider-2.png" width="312" height="507"
+                    alt="Банановое мороженое.">
+                  <div class="slider-prev-next">
+                    <button class="slider-button-arrow slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 16 16">
+                        <path
+                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <button class="slider-button-arrow slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 16 16">
+                        <path
+                          d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="slider-image-item slider-image-item-mini">
+                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-3.png" width="66" height="150"
+                    alt="Карамельное мороженое.">
+                </li>
+                <li class="slider-image-item slider-image-item-mini">
+                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
+                    alt="Карамельное мороженое.">
+                </li>
+              </ol>
             </div>
-            <div class="slider-image-substrate-mini image-mini">
-              <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
-                alt="Банановое мороженое.">
+
+            <div class="slider-3">
+              <div class="slider-content">
+                <h2 class="title-slider">
+                  Карамельный пломбир с маршмеллоу
+                </h2>
+                <p class="slider-description">
+                  Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет<br>
+                  сердца сладкоежек всех
+                  возрастов.
+                </p>
+                <a class="button-type-link button-slider" href="#">Заказать</a>
+              </div>
+              <ol class="slider-image-list">
+                <li class="slider-image-item slider-3-image-item-max">
+                  <img class="slider-image-ice-cream" src="images/slider/slider-3.png" width="350" height="507"
+                    alt="Карамельное мороженое.">
+                  <div class="slider-3-prev-next">
+                    <button class="slider-button-arrow slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 16 16">
+                        <path
+                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <button class="slider-button-arrow slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 16 16">
+                        <path
+                          d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="slider-image-item slider-image-item-mini">
+                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
+                    alt="Банановое мороженое.">
+                </li>
+                <li class="slider-image-item slider-image-item-mini">
+                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
+                    alt="Карамельное мороженое.">
+                </li>
+              </ol>
             </div>
-            <div class="slider-image-substrate-mini">
-              <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
-                alt="Карамельное мороженое.">
-            </div>-->
 
           </div>
           <div class="slider-icons">
