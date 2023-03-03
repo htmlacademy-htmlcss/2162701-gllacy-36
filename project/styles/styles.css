@@ -286,7 +286,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-    align-items: center;
+  align-items: center;
 }
 
 .slider-image-item {
@@ -316,7 +316,8 @@ body {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);;
+  transform: translate(-50%, -50%);
+  ;
   z-index: -1;
 }
 
@@ -1578,11 +1579,59 @@ a.button-type-link:disabled {
   border-radius: 4px;
   display: none;
   min-height: 96px;
-  min-width: 288px;
+  min-width: 136px;
 }
 
 .popover-open {
   display: block;
+}
+
+.popover-catalog {
+  left: 0;
+  top: 46px;
+  padding: 10px 0 4px 16px;
+}
+
+.popover-catalog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.popover-catalog-link {
+  text-decoration: none;
+  display: inline-block;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 14px 6px 0;
+}
+
+.popover-catalog-item:first-child {
+  font-weight: 700;
+}
+
+.popover-catalog-item:first-child + .popover-catalog-item {
+  border-top: 2px solid #B9B9B9;
+  width: 103px;
+  padding-top: 6px;
+  margin-top: 4px;
+}
+
+.popover-catalog-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.popover-catalog-link:hover {
+  background: #FFCBD8;
+}
+
+.popover-catalog-link:active {
+  background: #FF7799;
+}
+
+.popover-catalog-link-current {
+  background: #FF4A78;
+  color: #FCFCFC;
 }
 
 .popover-enter {
@@ -1593,8 +1642,22 @@ a.button-type-link:disabled {
 .popover-enter-form {
   padding: 32px 0;
   display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  width: 324px;
+}
+
+
+.popover-field {
+  color: #2D3440;
+}
+
+.password-field::placeholder {
+  color: #2D3440;
+  font-size: 26px;
+  line-height: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .link-decoration-button {
@@ -1603,7 +1666,7 @@ a.button-type-link:disabled {
   flex-wrap: wrap;
 }
 
-.user-link-list{
+.user-link-list {
   list-style: none;
   padding-left: 26px;
 }
@@ -1611,10 +1674,6 @@ a.button-type-link:disabled {
 .user-link {
   color: #2D3440;
   font-size: 14px;
-}
-
-.popover-field {
-  width: 324px;
 }
 
 .popover-search {
