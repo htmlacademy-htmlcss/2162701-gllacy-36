@@ -1683,6 +1683,18 @@ a.button-type-link:disabled {
 
 .input-search {
   width: 324px;
+  border: 1px solid #B9B9B9;
+    padding: 14px 16px;
+    font-family: "Inter", sans-serif;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+
+.input-search:active {
+  border: 1px solid #B9B9B9;
 }
 
 .popover-basket {
@@ -1734,7 +1746,7 @@ a.button-type-link:disabled {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  min-width: 170px;
+  min-width: 150px;
 }
 
 .popover-ice-cream-description {
@@ -1745,20 +1757,30 @@ a.button-type-link:disabled {
 }
 
 .popover-ice-cream-price {
-  min-width: 100px;
+  min-width: 120px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
   padding: 6px 0;
 }
 
-.popover-close {
-  right: 48px;
-  width: 10px;
-  height: 10px;
+.close-button {
+  position: absolute;
+  padding: 0;
+  top: 16px;
+  right: 0;
+  width: 16px;
+  height: 30px;
   background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: #FCFCFC;
 }
 
+.popover-basket-item {
+  position: relative;
+}
 
 .popover-basket-item:last-child {
   border-bottom: 1px solid #E7E7E7;
@@ -1770,4 +1792,81 @@ a.button-type-link:disabled {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal-container-close{
+  display: none;
+}
+
+.modal-feedback {
+  margin: auto;
+  position: relative;
+  width: 570px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  padding: 64px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: #FCFCFC;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.title-modal {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.modal-form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.modal-feedback-form {
+  /*width: 442px;
+  display: grid;
+  gap: 16px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-field {
+  width: 410px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.field-textarea {
+  resize: none;
+  width: 410px;
+  margin: 0;
+  margin-bottom: 32px;
 }

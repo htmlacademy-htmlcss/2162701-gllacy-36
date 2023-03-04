@@ -23,10 +23,10 @@
                     clip-rule="evenodd" />
                 </svg>
               </a>
-              <div class="popover popover-catalog popover-open">
+              <div class="popover popover-catalog">
                 <ul class="popover-catalog-list">
                   <li class="popover-catalog-item">
-                    <a class="popover-catalog-link popover-catalog-link-current" href="#">Новинки</a>
+                    <a class="popover-catalog-link" href="#">Новинки</a>
                   </li>
                   <li class="popover-catalog-item">
                     <a class="popover-catalog-link" href="#">Сливочное</a>
@@ -68,10 +68,10 @@
                     clip-rule="evenodd" />
                 </svg>
               </button>
-              <div class="popover popover-search">
+              <div class="popover popover-search  popover-open">
                 <div class="popover-content-search">
                   <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                    <input class="field input-search" type="search" name="search-text" placeholder="Поиск по сайту"
+                    <input class="input-search" type="search" name="search-text" placeholder="Поиск по сайту"
                       aria-label="введите поисковый запрс" maxlength="300">
                   </form>
                 </div>
@@ -137,8 +137,10 @@
                           1 кг х 310 ₽
                         </p>
                       </div>
-                      <span class="popover-ice-cream-price">310 ₽/кг</span>
-                      <span class="popover-close"></span>
+                      <span class="popover-ice-cream-price">310 ₽</span>
+                      <button class="close-button">
+                        <span class="visually-hidden"></span>
+                        </button>
                     </li>
                     <li class="popover-basket-item">
                       <img class="popover-ice-cream-image" src="images/catalog/catalog-4.png" width="46" height="46"
@@ -151,8 +153,10 @@
                           1,5 кг х 320 ₽
                         </p>
                       </div>
-                      <span class="popover-ice-cream-price">480 ₽/кг</span>
-                      <span class="popover-close"></span>
+                      <span class="popover-ice-cream-price">480 ₽</span>
+                      <button class="close-button">
+                        <span class="visually-hidden"></span>
+                        </button>
                     </li>
                   </ul>
                   <div class="popover-decoration">
@@ -736,6 +740,28 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden"></span>
+        </button>
+        <section class="modal-content">
+          <h2 class="title-modal">Мы обязательно ответим вам!</h2>
+          <div class="modal-form-button">
+          <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="field modal-field" type="text" name="name" placeholder="Имя и фамилия" aria-label="введите ваше имя">
+            <input class="field modal-field" type="text" name="email" placeholder="email@example.com" aria-label="введите вашу почту">
+            <textarea class="field field-textarea" maxlength="1000" rows="6" name="feedback" placeholder="В свободной форме" aria-label="В свободной форме"></textarea>
+          </form>
+          <button class="button" type="submit">
+            <span class="button-text">Отправить</span>
+          </button>
+        </div>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>

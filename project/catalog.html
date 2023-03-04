@@ -79,40 +79,44 @@
                     <li class="popover-basket-item">
                       <img class="popover-ice-cream-image" src="images/catalog/catalog-1.png" width="46" height="46"
                         alt="малиновое морожное">
-                        <div>
-                      <h3 class="popover-ice-cream-title">
-                        Малинка
-                      </h3>
-                      <p class="popover-ice-cream-description">
-                        1 кг х 310 ₽
-                      </p>
-                    </div>
-                      <span class="popover-ice-cream-price">310 ₽/кг</span>
-                      <span class="popover-close"></span>
+                      <div>
+                        <h3 class="popover-ice-cream-title">
+                          Малинка
+                        </h3>
+                        <p class="popover-ice-cream-description">
+                          1 кг х 310 ₽
+                        </p>
+                      </div>
+                      <span class="popover-ice-cream-price">310 ₽</span>
+                      <button class="close-button">
+                        <span class="visually-hidden"></span>
+                      </button>
                     </li>
                     <li class="popover-basket-item">
                       <img class="popover-ice-cream-image" src="images/catalog/catalog-4.png" width="46" height="46"
                         alt="бабл-гам морожное.">
-                        <div>
-                      <h3 class="popover-ice-cream-title">
-                        Бабл-гам
-                      </h3>
-                      <p class="popover-ice-cream-description">
-                        1,5 кг х 320 ₽
-                      </p>
-                    </div>
-                      <span class="popover-ice-cream-price">480 ₽/кг</span>
-                      <span class="popover-close"></span>
+                      <div>
+                        <h3 class="popover-ice-cream-title">
+                          Бабл-гам
+                        </h3>
+                        <p class="popover-ice-cream-description">
+                          1,5 кг х 320 ₽
+                        </p>
+                      </div>
+                      <span class="popover-ice-cream-price">480 ₽</span>
+                      <button class="close-button">
+                        <span class="visually-hidden"></span>
+                      </button>
                     </li>
                   </ul>
                   <div class="popover-decoration">
-                  <button class="button popover-button-decoration" type="submit">
-                    <span class="button-text">Оформить заказ</span>
-                  </button>
-                  <span class="popover-ice-cream-price">Итого: 790 ₽</span>
+                    <button class="button popover-button-decoration" type="submit">
+                      <span class="button-text">Оформить заказ</span>
+                    </button>
+                    <span class="popover-ice-cream-price">Итого: 790 ₽</span>
+                  </div>
                 </div>
-                </div>
-                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -148,28 +152,28 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <div class="range-input-style">
-            <legend>Цена:</legend>
-            <label class="catalog-filter-price">
-              <input class="range-input" type="number" value="100" name="min-price">
-              ₽ -
-            </label>
-            <label class="catalog-filter-price">
-              <input class="range-input" type="number" value="500" name="max-price">
-              ₽
-            </label>
-          </div>
+              <legend>Цена:</legend>
+              <label class="catalog-filter-price">
+                <input class="range-input" type="number" value="100" name="min-price">
+                ₽ -
+              </label>
+              <label class="catalog-filter-price">
+                <input class="range-input" type="number" value="500" name="max-price">
+                ₽
+              </label>
+            </div>
             <div class="range-style">
-            <div class="range-scale">
-              <div class="range-bar" style="left: 24px; width: 88px">
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-          </div>
-          </div>
-          </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 24px; width: 88px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -212,20 +216,27 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" value="yes" checked>
                   <span class="control-mark-checkbox">
-                    <svg class="checked-input" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                      <path fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
-                      </svg>
+                    <svg class="checked-input" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                      viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </span>
                   <span class="filter">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item filter-checkbox-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="sugar-sprinkle" value="yes" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="sugar-sprinkle" value="yes"
+                    checked>
                   <span class="control-mark-checkbox">
-                    <svg class="checked-input" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                      <path fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
-                      </svg>
+                    <svg class="checked-input" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                      viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </span>
                   <span class="filter">сахарные посыпки</span>
                 </label>
@@ -245,10 +256,10 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="syrup" value="yes">
                   <span class="control-mark-checkbox">
-                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                       <path fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </svg>-->
-                    </span>
+                  </span>
                   <span class="filter">сиропы</span>
                 </label>
               </li>
@@ -256,7 +267,7 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="jam" value="yes">
                   <span class="control-mark-checkbox">
-                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                       <path fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </svg>-->
                   </span>
