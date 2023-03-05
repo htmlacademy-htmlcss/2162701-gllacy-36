@@ -16,7 +16,7 @@
             <li class="navigation-item">
               <a class="navigation-link navigation-link-svg-arrow" href="catalog.html">
                 Каталог
-                <svg class="link-svg-arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                <svg class="link-svg-arrow-down" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z"
@@ -59,7 +59,7 @@
             +7 800 555-86-28
           </a>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item-false navigation-item-user">
               <button class="navigation-user-button user-button-search" type="button" aria-label="поиск по сайту">
                 <svg class="navigation-icon-search" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -68,16 +68,18 @@
                     clip-rule="evenodd" />
                 </svg>
               </button>
-              <div class="popover popover-search  popover-open">
+              <div class="popover popover-search">
                 <div class="popover-content-search">
                   <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                    <input class="input-search" type="search" name="search-text" placeholder="Поиск по сайту"
+                    <input class="field input-search invalid" type="search" name="search-text" placeholder="Поиск по сайту"
                       aria-label="введите поисковый запрс" maxlength="300">
+                      <button class="visually-hidden" type="button">
+                        <span class="visually-hidden"></span></button>
                   </form>
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-user">
               <button class="navigation-user-button user-button-enter" type="button">
                 <svg class="navigation-icon-enter" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15">
@@ -112,7 +114,7 @@
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-user">
               <button class="navigation-user-button user-button-basket" type="button" aria-label="корзина">
                 <svg class="navigation-icon-basket" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
@@ -608,12 +610,23 @@
               </p>
               <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="label-text">
+
+                  <span class="form-label">
                   <label class="form-label" for="delivery-data">
                     Дата
-                    <button class="info">
-                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                    </button>
                   </label>
+                  <span class="tooltip">
+                    <button class="tooltip-button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.0003 2.3333c-3.1298 0-5.667 2.5372-5.667 5.667 0 3.1297 2.5372 5.6669 5.667 5.6669 3.1297 0 5.6669-2.5372 5.6669-5.667 0-3.1297-2.5372-5.6669-5.667-5.6669ZM1 8.0003C1 4.134 4.1341 1 8.0003 1c3.8661 0 7.0002 3.1341 7.0002 7.0003 0 3.8661-3.1341 7.0002-7.0002 7.0002C4.134 15.0005 1 11.8664 1 8.0003Zm7-.667A.6667.6667 0 0 1 8.6668 8v2.5334a.6667.6667 0 1 1-1.3333 0V8A.6667.6667 0 0 1 8 7.3333ZM8 4.8a.6667.6667 0 1 0 0 1.3333h.0067a.6667.6667 0 0 0 0-1.3333h-.0066Z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите желаемую дату и время доставки
+                    </span>
+                  </span>
+                  </span>
+
                   <input class="field" type="text" id="delivery-data" name="delivery-data" placeholder="01.04.2020">
                 </p>
                 <p class="label-text">
@@ -624,13 +637,25 @@
                     placeholder="+7 800 999-00-00">
                 </p>
                 <p class="label-text form-label-address">
-                  <label class="form-label" for="delivery- address">
+
+                  <span class="form-label">
+                  <label class="form-label" for="delivery-address">
                     Адрес
-                    <button class="info">
-                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                    </button>
                   </label>
-                  <input class="field" type="text" id="delivery- address" name="delivery-address"
+                  <span class="tooltip">
+                    <button class="tooltip-button" aria-labelledby="tooltip-label-address">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.0003 2.3333c-3.1298 0-5.667 2.5372-5.667 5.667 0 3.1297 2.5372 5.6669 5.667 5.6669 3.1297 0 5.6669-2.5372 5.6669-5.667 0-3.1297-2.5372-5.6669-5.667-5.6669ZM1 8.0003C1 4.134 4.1341 1 8.0003 1c3.8661 0 7.0002 3.1341 7.0002 7.0003 0 3.8661-3.1341 7.0002-7.0002 7.0002C4.134 15.0005 1 11.8664 1 8.0003Zm7-.667A.6667.6667 0 0 1 8.6668 8v2.5334a.6667.6667 0 1 1-1.3333 0V8A.6667.6667 0 0 1 8 7.3333ZM8 4.8a.6667.6667 0 1 0 0 1.3333h.0067a.6667.6667 0 0 0 0-1.3333h-.0066Z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">
+                      Введите название улицы, дома и квартиры
+                    </span>
+                  </span>
+                  </span>
+
+
+                  <input class="field" type="text" id="delivery-address" name="delivery-address"
                     placeholder="ул. Большая Конюшенная, 19/8">
                 </p>
                 <button class="button button-delivery" type="submit">Отправить</button>
