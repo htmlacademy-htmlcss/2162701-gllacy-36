@@ -585,6 +585,7 @@ body {
 
 .slider-bullet {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -745,7 +746,6 @@ a.button-type-link:disabled {
 .present-item {
   color: #2D3440;
   width: 570px;
-  height: 268px;
   border-radius: 16px;
   background-size: 219px 268px;
   list-style: none;
@@ -884,13 +884,15 @@ a.button-type-link:disabled {
 .shop-description {
   color: #565C66;
   margin: 0;
+  width: 442px;
 }
 
 .container-shop {
   width: 1122px;
-  height: 432px;
+  min-height: 432px;
   background: #FFFFFF;
   border-radius: 16px;
+  margin: 24px;
 }
 
 .shop-list {
@@ -929,9 +931,7 @@ a.button-type-link:disabled {
 .shop-ice-cream {
   background-image: url("../images/background/background-shop-ice-cream.jpg");
   width: 1170px;
-  height: 480px;
   border-radius: 16px;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -946,7 +946,6 @@ a.button-type-link:disabled {
 .news {
   background-image: url("../images/background/background-news.jpg");
   width: 570px;
-  height: 224px;
   border-radius: 16px;
 }
 
@@ -974,22 +973,21 @@ a.button-type-link:disabled {
   background-image: url("../images/background/background-subscription.jpg");
   border-radius: 16px;
   width: 570px;
-  height: 224px;
 }
 
 .container-subscription {
   width: 558px;
-  height: 212px;
+  min-height: 212px;
   background: #FFFFFF;
   border-radius: 16px;
-  margin-top: 6px;
-  margin-left: 6px;
+  margin: 6px;
+  padding: 26px 26px 25px;
+    box-sizing: border-box;
 }
 
 .subscription-description {
   color: #565C66;
   margin: 0;
-  padding: 26px;
   padding-bottom: 46px;
 }
 
@@ -1003,7 +1001,6 @@ a.button-type-link:disabled {
   color: #B9B9B9;
   line-height: 20px;
   display: flex;
-  padding-left: 23px;
 }
 
 .button-subscription {
@@ -1047,13 +1044,13 @@ a.button-type-link:disabled {
 
 .delivery {
   background-image: url("../images/background/background-delivery.jpg");
-  height: 534px;
   border-radius: 16px;
 }
 
 .container-delivery {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .delivery-description {
@@ -1064,9 +1061,8 @@ a.button-type-link:disabled {
 
 .delivery-title-description {
   width: 380px;
-  margin-top: 167px;
+  margin-top: 35px;
   margin-left: 100px;
-  margin-right: 71px;
 }
 
 .title-delivery {
@@ -1077,13 +1073,12 @@ a.button-type-link:disabled {
   display: block;
   box-sizing: border-box;
   width: 500px;
-  height: 406px;
+  min-height: 405px;
   background: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-  margin: 64px;
+  margin: 64px 64px 65px;
   padding: 40px;
-  padding-bottom: 42px;
 }
 
 .delivery-form {
@@ -1102,7 +1097,7 @@ a.button-type-link:disabled {
   grid-column: 1/-1;
   justify-self: center;
   align-self: end;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .form-label {
@@ -1181,7 +1176,6 @@ a.button-type-link:disabled {
 
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
-  height: 492px;
   border-radius: 16px;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -1191,12 +1185,12 @@ a.button-type-link:disabled {
 
 .container-contacts {
   width: 343px;
-  height: 364px;
+  min-height: 364px;
   background: #FCFCFC;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 40px 40px;
+  padding: 41px 40px;
 }
 
 .contacts-list {
@@ -1246,12 +1240,11 @@ a.button-type-link:disabled {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 33px;
+  margin-top: 48px;
 }
 
 .social {
   margin: 0;
-  margin-top: 16px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -1271,6 +1264,7 @@ a.button-type-link:disabled {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 8px 0;
+  margin: 0;
 }
 
 .navigation-page-link {
