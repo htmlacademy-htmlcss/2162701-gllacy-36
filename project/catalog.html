@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Каталог мороженого Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../project/images/favicon/favicon.png">
   </head>
 
   <body>
@@ -91,7 +92,7 @@
                         </p>
                       </div>
                       <span class="popover-ice-cream-price">310 ₽</span>
-                      <button class="close-button">
+                      <button class="close-button" type="button">
                         <span class="visually-hidden"></span>
                       </button>
                     </li>
@@ -107,7 +108,7 @@
                         </p>
                       </div>
                       <span class="popover-ice-cream-price">480 ₽</span>
-                      <button class="close-button">
+                      <button class="close-button" type="button">
                         <span class="visually-hidden"></span>
                       </button>
                     </li>
@@ -154,8 +155,9 @@
             </select>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <div class="range-input-style">
-              <legend>Цена:</legend>
+              <legend class="visually-hidden">Цена:</legend>
+              <div class="range-input-style">
+                <span>Цена:</span>
               <label class="catalog-filter-price">
                 <input class="range-input" type="number" value="100" name="min-price">
                 ₽ -
