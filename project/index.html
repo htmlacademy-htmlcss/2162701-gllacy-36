@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Магазин мороженого Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../project/images/favicon/favicon.png">
   </head>
 
   <body>
@@ -23,7 +24,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </a>
-              <div class="popover popover-catalog popover-open">
+              <div class="popover popover-catalog">
                 <ul class="popover-catalog-list">
                   <li class="popover-catalog-item">
                     <a class="popover-catalog-link" href="#">Новинки</a>
@@ -61,7 +62,6 @@
                 +7 800 555-86-28
               </a>
             </li>
-
             <li class="navigation-item navigation-item-user">
               <button class="navigation-user-button user-button-search" type="button" aria-label="поиск по сайту">
                 <svg class="navigation-icon-search" aria-hidden="true" focusable="false"
@@ -92,14 +92,16 @@
                 </svg>
                 <span class="navigation-user-button-text">Вход</span>
               </button>
-              <div class="popover popover-enter">
+              <div class="popover popover-enter popover-open">
                 <div class="popover-content-enter">
                   <h2 class="popover-title">Личный кабинет</h2>
                   <form class="popover-enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <input class="field popover-field" name="email" type="email" placeholder="email@example.com"
-                      aria-label="введите вашу почту">
-                    <input class="field password-field" name="password" type="password" placeholder="....."
-                      aria-label="введите ваш пароль">
+                    <label class="visually-hidden" for="auth-login">Логин</label>
+                    <input class="field popover-field" id="auth-login" name="email" type="email" placeholder="email@example.com"
+                      aria-label="введите вашу почту" required>
+                      <label class="visually-hidden" for="auth-password">Пароль</label>
+                    <input class="field password-field" id="auth-password" name="password" type="password" placeholder="....."
+                      aria-label="введите ваш пароль" required>
                   </form>
                   <div class="link-decoration-button">
                     <button class="button" type="submit">
@@ -143,8 +145,8 @@
                         </p>
                       </div>
                       <span class="popover-ice-cream-price">310 ₽</span>
-                      <button class="close-button">
-                        <span class="visually-hidden"></span>
+                      <button class="close-button" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
                     <li class="popover-basket-item">
@@ -159,8 +161,8 @@
                         </p>
                       </div>
                       <span class="popover-ice-cream-price">480 ₽</span>
-                      <button class="close-button">
-                        <span class="visually-hidden"></span>
+                      <button class="close-button" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
                   </ul>
@@ -190,7 +192,7 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <div class="container">
         <section class="slider-ice-cream">
-          <div class="slider-1">
+          <div class="slider-1  slider-open">
             <div class="slider-content">
               <h2 class="title-slider">
                 Нежный пломбир
@@ -236,103 +238,104 @@
                   alt="Карамельное мороженое.">
               </li>
             </ol>
-
-
-            <div class="slider-2">
-              <div class="slider-content">
-                <h2 class="title-slider">
-                  Сливочное мороженое со вкусом банана
-                </h2>
-                <p class="slider-description">
-                  Сливочное мороженное с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
-                  летний день.
-                </p>
-                <a class="button-type-link button-slider" href="#">Заказать</a>
-              </div>
-              <ol class="slider-image-list">
-                <li class="slider-image-item slider-2-image-item-max">
-                  <img class="slider-image-ice-cream" src="images/slider/slider-2.png" width="312" height="507"
-                    alt="Банановое мороженое.">
-                  <div class="slider-prev-next">
-                    <button class="slider-button-arrow slider-prev" type="button">
-                      <span class="visually-hidden">Предыдущее фото</span>
-                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" viewBox="0 0 16 16">
-                        <path
-                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                    <button class="slider-button-arrow slider-next" type="button">
-                      <span class="visually-hidden">Следующее фото</span>
-                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" viewBox="0 0 16 16">
-                        <path
-                          d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </li>
-                <li class="slider-image-item slider-image-item-mini">
-                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-3.png" width="66" height="150"
-                    alt="Карамельное мороженое.">
-                </li>
-                <li class="slider-image-item slider-image-item-mini">
-                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
-                    alt="Карамельное мороженое.">
-                </li>
-              </ol>
-            </div>
-
-            <div class="slider-3">
-              <div class="slider-content">
-                <h2 class="title-slider">
-                  Карамельный пломбир с маршмеллоу
-                </h2>
-                <p class="slider-description">
-                  Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца
-                  сладкоежек всех возрастов.
-                </p>
-                <a class="button-type-link button-slider" href="#">Заказать</a>
-              </div>
-              <ol class="slider-image-list">
-                <li class="slider-image-item slider-3-image-item-max">
-                  <img class="slider-image-ice-cream" src="images/slider/slider-3.png" width="350" height="507"
-                    alt="Карамельное мороженое.">
-                  <div class="slider-3-prev-next">
-                    <button class="slider-button-arrow slider-prev" type="button">
-                      <span class="visually-hidden">Предыдущее фото</span>
-                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" viewBox="0 0 16 16">
-                        <path
-                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                    <button class="slider-button-arrow slider-next" type="button">
-                      <span class="visually-hidden">Следующее фото</span>
-                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" viewBox="0 0 16 16">
-                        <path
-                          d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </li>
-                <li class="slider-image-item slider-image-item-mini">
-                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
-                    alt="Банановое мороженое.">
-                </li>
-                <li class="slider-image-item slider-image-item-mini">
-                  <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
-                    alt="Карамельное мороженое.">
-                </li>
-              </ol>
-            </div>
-
           </div>
+
+          <div class="slider-2">
+            <div class="slider-content">
+              <h2 class="title-slider">
+                Сливочное мороженое со вкусом банана
+              </h2>
+              <p class="slider-description">
+                Сливочное мороженное с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
+                летний день.
+              </p>
+              <a class="button-type-link button-slider" href="#">Заказать</a>
+            </div>
+            <ol class="slider-image-list">
+              <li class="slider-image-item slider-2-image-item-max">
+                <img class="slider-image-ice-cream" src="images/slider/slider-2.png" width="312" height="507"
+                  alt="Банановое мороженое.">
+                <div class="slider-prev-next">
+                  <button class="slider-button-arrow slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <button class="slider-button-arrow slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
+                <img class="slider-image-ice-cream-mini" src="images/slider/slider-3.png" width="66" height="150"
+                  alt="Карамельное мороженое.">
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
+                <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
+                  alt="Карамельное мороженое.">
+              </li>
+            </ol>
+          </div>
+
+          <div class="slider-3">
+            <div class="slider-content">
+              <h2 class="title-slider">
+                Карамельный пломбир
+                с&nbsp;маршмеллоу
+              </h2>
+              <p class="slider-description">
+                Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет <br> сердца
+                сладкоежек всех возрастов.
+              </p>
+              <a class="button-type-link button-slider" href="#">Заказать</a>
+            </div>
+            <ol class="slider-image-list">
+              <li class="slider-image-item slider-3-image-item-max">
+                <img class="slider-image-ice-cream" src="images/slider/slider-3.png" width="350" height="507"
+                  alt="Карамельное мороженое.">
+                <div class="slider-3-prev-next">
+                  <button class="slider-button-arrow slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <button class="slider-button-arrow slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
+                <img class="slider-image-ice-cream-mini" src="images/slider/slider-1.png" width="66" height="150"
+                  alt="Банановое мороженое.">
+              </li>
+              <li class="slider-image-item slider-image-item-mini">
+                <img class="slider-image-ice-cream-mini" src="images/slider/slider-2.png" width="66" height="150"
+                  alt="Карамельное мороженое.">
+              </li>
+            </ol>
+          </div>
+
+
           <div class="slider-icons">
             <ol class="slider-bullet">
               <li class="slider-bullet-item">
@@ -408,7 +411,7 @@
                   При покупке 2&nbsp;кг любого фруктового мороженого добавим в&nbsp;ваш заказ банку малинового варенья
                   бесплатно.
                 </p>
-                <a class="button-type-link" href="#">Хочу подарок</a>
+                <a class="button-type-link present-button-link" href="#">Хочу подарок</a>
               </div>
             </li>
             <li class="present-item present-item-marshmallow">
@@ -418,7 +421,7 @@
                 </h3>
                 <p class="present-description">При покупке 2&nbsp;кг пломбира добавим в&nbsp;ваш заказ упаковку нежных
                   зефирок совершенно бесплатно.</p>
-                <a class="button-type-link" href="#">Хочу подарок</a>
+                <a class="button-type-link present-button-link" href="#">Хочу подарок</a>
               </div>
             </li>
           </ul>
@@ -566,7 +569,7 @@
       <div class="index-columns container">
         <article class="news">
           <div class="container-news">
-            <h3 class="news-tile">Новое в нашем блоге</h3>
+            <h3 class="news-title">Новое в нашем блоге</h3>
             <a class="news-link" href="#">
               10&nbsp;способов сервировки фруктовых щербетов
               к&nbsp;столу
@@ -584,7 +587,7 @@
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="rield field" type="email" placeholder="email@example.com" name="subscription-mail"
-                id="subscription-email" aria-label="введите вашу почту">
+                 aria-label="введите вашу почту">
               <button class="button button-subscription" type="submit">
                 <span class="button-text">Отправить</span>
               </button>
@@ -614,7 +617,7 @@
                       Дата
                     </label>
                     <span class="tooltip">
-                      <button class="tooltip-button" aria-labelledby="tooltip-label-date">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
                         <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                           viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
@@ -642,7 +645,7 @@
                       Адрес
                     </label>
                     <span class="tooltip">
-                      <button class="tooltip-button" aria-labelledby="tooltip-label-address">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-address">
                         <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                           viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
@@ -768,16 +771,18 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal-feedback">
-        <button class="modal-close-button">
-          <span class="visually-hidden"></span>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
         </button>
         <section class="modal-content">
           <h2 class="title-modal">Мы обязательно ответим вам!</h2>
           <div class="modal-form-button">
             <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field modal-field" type="text" name="name" placeholder="Имя и фамилия"
+              <label class="visually-hidden" for="username">Имя пользователя</label>
+              <input class="field modal-field" id="username" type="text" name="name" placeholder="Имя и фамилия"
                 aria-label="введите ваше имя">
-              <input class="field modal-field" type="text" name="email" placeholder="email@example.com"
+                <label class="visually-hidden" for="email-for-feedback">Почта</label>
+              <input class="field modal-field" id="email-for-feedback" type="text" name="email" placeholder="email@example.com"
                 aria-label="введите вашу почту">
               <textarea class="field field-textarea" maxlength="1000" rows="6" name="feedback"
                 placeholder="В свободной форме" aria-label="В свободной форме"></textarea>
