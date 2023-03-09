@@ -608,14 +608,13 @@
         </div>
         <div class="pagination-show-more">
           <button class="button-type-link button-show-more" type="button">Показать ещё</button>
-          <ul class="pagination">
+          <div class="pagination">
+          <a class="pagination-prev">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+          <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item  pagination-current">
-              <a class="pagination-link">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -629,12 +628,11 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">5</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
           </ul>
+          <a class="pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </div>
         </div>
       </section>
     </main>
