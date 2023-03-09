@@ -1653,6 +1653,10 @@ input[type="number"] {
   padding: 41px 0;
 }
 
+.pagination {
+  column-gap: 8px;
+}
+
 .pagination,
 .pagination-list {
   display: flex;
@@ -1682,19 +1686,14 @@ input[type="number"] {
 }
 
 .pagination-link-current {
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   box-shadow: inset 0 0 0 1px rgba(252, 252, 252, 1);
-}
-
-.pagination-item:last-child {
-  margin-right: 8px;
 }
 
 .pagination-prev {
   background-image: url("../images/arrow-left.svg");
   height: 16px;
   width: 16px;
-  right: 8px;
   position: relative;
 }
 
@@ -1706,18 +1705,18 @@ input[type="number"] {
 }
 
 .pagination-link:focus-visible {
-  background: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   box-shadow: inset 0 0 0 1px #2d3440;
   outline: none;
 }
 
 .pagination-link:hover {
-  background: rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
   box-shadow: inset 0 0 0 1px rgba(252, 252, 252, 0.5);
 }
 
 .pagination-link:active {
-  background: rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
   box-shadow: inset 0 0 0 1px rgba(252, 252, 252, 1);
 }
 
