@@ -1026,6 +1026,15 @@ a.button-type-link:disabled {
   box-shadow: inset 0 0 0 1px #ea5454;
 }*/
 
+
+.input:invalid:not(:placeholder-shown) {
+  border: 1px solid #ea5454;
+}
+
+.input:invalid:not(:placeholder-shown):hover {
+  box-shadow: inset 0 0 0 1px #ea5454;
+}
+
 .field {
   border: 1px solid #b9b9b9;
   padding: 14px 16px;
