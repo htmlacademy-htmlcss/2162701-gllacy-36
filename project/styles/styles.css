@@ -60,7 +60,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-width: 1366px;
+  max-width: 1366px;
 }
 
 .visually-hidden {
@@ -1018,15 +1018,6 @@ a.button-type-link:disabled {
   opacity: 0.65;
 }
 
-/*.field:invalid {
-  border: 1px solid #ea5454;
-}
-
-.field:hover:invalid {
-  box-shadow: inset 0 0 0 1px #ea5454;
-}*/
-
-
 .input:invalid:not(:placeholder-shown) {
   border: 1px solid #ea5454;
 }
@@ -1504,7 +1495,7 @@ input[type="number"] {
   padding-right: 33px;
   font: inherit;
   position: relative;
-  background-image: url("../images/arrow-down.svg");
+  background-image: url("../images/arrow-to-down.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
 }
@@ -1560,6 +1551,11 @@ input[type="number"] {
   top: 2px;
 }
 
+
+.control-input:focus-visible + .control-mark  {
+  box-shadow: inset 0 0 0 1px #ff2f64;
+}
+
 .control:hover .control-mark {
   box-shadow: inset 0 0 0 1px #fcfcfc;
 }
@@ -1577,6 +1573,10 @@ input[type="number"] {
   background-color: #2d3440;
   left: 5px;
   top: 5px;
+}
+
+.control-input:checked:focus-visible + .control-mark::before {
+  background-color: #ff2f64;
 }
 
 .control-input:checked:hover + .control-mark::before {
@@ -1605,6 +1605,9 @@ input[type="number"] {
   display: inline-block;
 }
 
+.control-input-checkbox:focus-visible + .control-mark-checkbox {
+  fill: #ff4a78;
+}
 
 .control-input-checkbox:hover + .control-mark-checkbox {
   fill: #fcfcfc;
@@ -1700,14 +1703,14 @@ input[type="number"] {
 }
 
 .pagination-prev {
-  background-image: url("../images/arrow-left.svg");
+  background-image: url("../images/arrow-to-left.svg");
   height: 16px;
   width: 16px;
   position: relative;
 }
 
 .pagination-next {
-  background-image: url("../images/arrow-right.svg");
+  background-image: url("../images/arrow-to-right.svg");
   height: 16px;
   width: 16px;
   position: relative;
